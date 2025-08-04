@@ -1,0 +1,1430 @@
+<ValueSetLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.1/src/main/resources/hl7-v2-schemas/ValueSets.xsd" ValueSetLibraryIdentifier="a278d357-2b17-47d1-9b05-f9be1aba8697">
+<MetaData Name="ADT" OrgName="No Org Info" Version="2.3.1" Date="No Date Info"/>
+<NoValidation>
+<BindingIdentifier>HL70217</BindingIdentifier>
+<BindingIdentifier>HL70345</BindingIdentifier>
+<BindingIdentifier>HL70050</BindingIdentifier>
+<BindingIdentifier>HL70139</BindingIdentifier>
+<BindingIdentifier>HL70129</BindingIdentifier>
+<BindingIdentifier>HL70063</BindingIdentifier>
+<BindingIdentifier>HL70053</BindingIdentifier>
+<BindingIdentifier>HL70171</BindingIdentifier>
+<BindingIdentifier>HL70010</BindingIdentifier>
+<BindingIdentifier>HL70073</BindingIdentifier>
+<BindingIdentifier>HL70018</BindingIdentifier>
+<BindingIdentifier>HL70056</BindingIdentifier>
+<BindingIdentifier>HL70111</BindingIdentifier>
+<BindingIdentifier>HL70131</BindingIdentifier>
+<BindingIdentifier>HL70308</BindingIdentifier>
+<BindingIdentifier>HL70189</BindingIdentifier>
+<BindingIdentifier>HL70151</BindingIdentifier>
+<BindingIdentifier>HL70099</BindingIdentifier>
+<BindingIdentifier>HL70328</BindingIdentifier>
+<BindingIdentifier>HL70342</BindingIdentifier>
+<BindingIdentifier>HL70114</BindingIdentifier>
+<BindingIdentifier>HL70059</BindingIdentifier>
+<BindingIdentifier>HL70362</BindingIdentifier>
+<BindingIdentifier>HL70295</BindingIdentifier>
+<BindingIdentifier>HL70305</BindingIdentifier>
+<BindingIdentifier>HL70302</BindingIdentifier>
+<BindingIdentifier>HL70212</BindingIdentifier>
+<BindingIdentifier>HL70022</BindingIdentifier>
+<BindingIdentifier>HL70307</BindingIdentifier>
+<BindingIdentifier>HL70300</BindingIdentifier>
+<BindingIdentifier>HL70340</BindingIdentifier>
+<BindingIdentifier>HL70215</BindingIdentifier>
+<BindingIdentifier>HL70288</BindingIdentifier>
+<BindingIdentifier>HL70110</BindingIdentifier>
+<BindingIdentifier>HL70045</BindingIdentifier>
+<BindingIdentifier>HL70219</BindingIdentifier>
+<BindingIdentifier>HL70363</BindingIdentifier>
+<BindingIdentifier>HL70313</BindingIdentifier>
+<BindingIdentifier>HL70143</BindingIdentifier>
+<BindingIdentifier>HL70005</BindingIdentifier>
+<BindingIdentifier>HL70346</BindingIdentifier>
+<BindingIdentifier>HL70068</BindingIdentifier>
+<BindingIdentifier>HL70306</BindingIdentifier>
+<BindingIdentifier>HL70086</BindingIdentifier>
+<BindingIdentifier>HL70289</BindingIdentifier>
+<BindingIdentifier>HL70046</BindingIdentifier>
+<BindingIdentifier>HL70051</BindingIdentifier>
+<BindingIdentifier>HL70006</BindingIdentifier>
+<BindingIdentifier>HL70214</BindingIdentifier>
+<BindingIdentifier>HL70069</BindingIdentifier>
+<BindingIdentifier>HL70172</BindingIdentifier>
+<BindingIdentifier>HL70347</BindingIdentifier>
+<BindingIdentifier>HL70312</BindingIdentifier>
+<BindingIdentifier>HL70115</BindingIdentifier>
+<BindingIdentifier>HL70233</BindingIdentifier>
+<BindingIdentifier>HL70188</BindingIdentifier>
+<BindingIdentifier>HL70341</BindingIdentifier>
+<BindingIdentifier>HL70296</BindingIdentifier>
+<BindingIdentifier>HL70311</BindingIdentifier>
+<BindingIdentifier>HL70361</BindingIdentifier>
+<BindingIdentifier>HL70218</BindingIdentifier>
+<BindingIdentifier>HL70021</BindingIdentifier>
+<BindingIdentifier>HL70044</BindingIdentifier>
+<BindingIdentifier>HL70072</BindingIdentifier>
+<BindingIdentifier>HL70087</BindingIdentifier>
+<BindingIdentifier>HL70064</BindingIdentifier>
+<BindingIdentifier>HL70117</BindingIdentifier>
+<BindingIdentifier>HL70130</BindingIdentifier>
+<BindingIdentifier>HL70032</BindingIdentifier>
+<BindingIdentifier>HL70019</BindingIdentifier>
+<BindingIdentifier>HL70343</BindingIdentifier>
+<BindingIdentifier>HL70042</BindingIdentifier>
+<BindingIdentifier>HL70327</BindingIdentifier>
+<BindingIdentifier>HL70055</BindingIdentifier>
+<BindingIdentifier>HL70333</BindingIdentifier>
+<BindingIdentifier>HL70088</BindingIdentifier>
+<BindingIdentifier>HL70303</BindingIdentifier>
+<BindingIdentifier>HL70304</BindingIdentifier>
+<BindingIdentifier>HL70216</BindingIdentifier>
+<BindingIdentifier>HL70066</BindingIdentifier>
+<BindingIdentifier>HL70118</BindingIdentifier>
+<BindingIdentifier>HL70152</BindingIdentifier>
+<BindingIdentifier>HL70089</BindingIdentifier>
+<BindingIdentifier>HL70297</BindingIdentifier>
+<BindingIdentifier>HL70222</BindingIdentifier>
+</NoValidation>
+<ValueSetDefinitions Group="HL7_Base" Order="1">
+<ValueSetDefinition BindingIdentifier="HL70217" Name="Visit Priority Code" Description="Visit Priority Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70207" Name="Processing mode" Description="Processing mode" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="not present" DisplayName="Not present (the default, meaning current processing)" CodeSystem="HL70207" Usage="P"/>
+<ValueElement Value="I" DisplayName="Initial load" CodeSystem="HL70207" Usage="P"/>
+<ValueElement Value="R" DisplayName="Restore from archive" CodeSystem="HL70207" Usage="P"/>
+<ValueElement Value="A" DisplayName="Archive" CodeSystem="HL70207" Usage="P"/>
+<ValueElement Value="T" DisplayName="Current processing, transmitted at intervals (scheduled or on demand)" CodeSystem="HL70207" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70345" Name="Appeal Reason" Description="Appeal Reason" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70080" Name="Nature of abnormal testing" Description="Nature of abnormal testing" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="N" DisplayName="None - generic normal range" CodeSystem="HL70080" Usage="P"/>
+<ValueElement Value="S" DisplayName="A sex-based population" CodeSystem="HL70080" Usage="P"/>
+<ValueElement Value="R" DisplayName="A race-based population" CodeSystem="HL70080" Usage="P"/>
+<ValueElement Value="A" DisplayName="An age-based population" CodeSystem="HL70080" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70050" Name="Accident Code" Description="Accident Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70139" Name="Employer Information Data" Description="Employer Information Data" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70129" Name="Accommodation Code" Description="Accommodation Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70191" Name="Type of referenced data" Description="Type of referenced data" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="TEXT" DisplayName="Machine readable text document (HL7 V2.3.1 and later)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="TX" DisplayName="Machine readable text document (HL7 V2.2 only)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="FT" DisplayName="Formatted text (HL7 V2.2 only)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="AP" DisplayName="Other application data, typically uninterpreted binary data (new with HL7 v 2.3)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="Image" DisplayName="Image data (HL7 V2.3 and later)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="SI" DisplayName="Scanned image (HL7 V2.2 only)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="Application" DisplayName="Other application data, typically uninterpreted binary data (HL7 V2.3 and later)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="SD" DisplayName="Scanned document (HL7 V2.2 only)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="NS" DisplayName="Non-scanned image (HL7 V2.2 only)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="AU" DisplayName="Audio data (new with HL7 v 2.3)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="Audio" DisplayName="Audio data (HL7 V2.3 and later)" CodeSystem="HL70191" Usage="P"/>
+<ValueElement Value="IM" DisplayName="Image data (new with HL7 v 2.3)" CodeSystem="HL70191" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70063" Name="Relationship" Description="Relationship" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70053" Name="Diagnosis Coding Methed" Description="Diagnosis Coding Methed" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70171" Name="Citizenship" Description="Citizenship" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70010" Name="Physician ID" Description="Physician ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70023" Name="Admit source" Description="Admit source" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="3" DisplayName="HMO referral" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="2" DisplayName="Clinic referral" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="6" DisplayName="Transfer from another health care facility" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="8" DisplayName="Court/law enforcement" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="5" DisplayName="Transfer from a skilled nursing facility" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="4" DisplayName="Transfer from a hospital" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="7" DisplayName="Emergency room" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="1" DisplayName="Physician referral" CodeSystem="HL70023" Usage="P"/>
+<ValueElement Value="9" DisplayName="Information not available" CodeSystem="HL70023" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70093" Name="Release information" Description="Release information" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="Y" DisplayName="Yes" CodeSystem="HL70093" Usage="P"/>
+<ValueElement Value="N" DisplayName="No" CodeSystem="HL70093" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70003" Name="Event type" Description="Event type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="Q02" DisplayName="QRY/QCK - Query sent for deferred response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S16" DisplayName="SIU/ACK - Notification of appointment discontinuation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCG" DisplayName="PPG - PC/ Pathway (Goal-Oriented) Add" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A14" DisplayName="ADT/ACK - Pending admit" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C04" DisplayName="CRM - Patient has gone off a clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I03" DisplayName="RQI/RPR - Request/receipt of patient selection list" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="RAR" DisplayName="RAR - Pharmacy administration information query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S15" DisplayName="SIU/ACK - Notification of appointment cancellation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A39" DisplayName="ADT/ACK - Merge person – patient ID" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S01" DisplayName="SRM/SRR - Request new appointment booking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R05" DisplayName="QRY/DSR - query for display results" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="V04" DisplayName="VXU - Unsolicited vaccination record update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I05" DisplayName="RQC/RCI - Request for patient clinical information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A04" DisplayName="ADT/ACK - Register a patient" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCD" DisplayName="PPP - PC/ Pathway (Problem-Oriented) Delete" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A24" DisplayName="ADT/ACK - Link patient information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C07" DisplayName="CRM - Correct/update phase information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C10" DisplayName="CSU - Patient completes the clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I04" DisplayName="RQD/RPI - Request for patient demographic data" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S09" DisplayName="SRM/SRR - Request cancellation of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCJ" DisplayName="PPG - PC/ Pathway (Goal-Oriented) Delete" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R08" DisplayName="TBR – tabular data response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC9" DisplayName="QRY - PC/ Goal Query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A50" DisplayName="ADT/ACK - Change visit number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S03" DisplayName="SRM/SRR - Request appointment modification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="varies" DisplayName="MFQ/MFR - Master files query (use event same as asking for e.g., M05 - location)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A01" DisplayName="ADT/ACK - Admit/visit notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A12" DisplayName="ADT/ACK - Cancel transfer" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C09" DisplayName="CSU - Automated time intervals for reporting, like monthly" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="O02" DisplayName="ORR - Order response (also RRE, RRD, RRG, RRA)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P06" DisplayName="BAR/ACK - End account" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S26" DisplayName="SIU/ACK Notification that patient did not show up for schedule appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A46" DisplayName="ADT/ACK - Change patient ID" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC6" DisplayName="PGL - PC/ Goal Add" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R0R" DisplayName="R0R - Pharmacy prescription order query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T09" DisplayName="MDM/ACK - Document replacement notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I13" DisplayName="REF/RRI - Modify patient referral" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A06" DisplayName="ADT/ACK - Change an outpatient to an inpatient" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C11" DisplayName="CSU - Patient completes a phase of the clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S05" DisplayName="SRM/SRR - Request appointment discontinuation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M04" DisplayName="MFN/MFK - Master files charge description" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q03" DisplayName="DSR/ACK - Deferred response to a query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A28" DisplayName="ADT/ACK - Add person information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M07" DisplayName="MFN/MFK - Clinical study without phases but with schedules master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S22" DisplayName="SIU/ACK - Notification of deletion of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A43" DisplayName="ADT/ACK - Move patient information – patient identifier list" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A23" DisplayName="ADT/ACK - Delete a patient record" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P07" DisplayName="PEX - Unsolicited initial individual product experience report" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q04" DisplayName="EQQ – Embedded query language query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A27" DisplayName="ADT/ACK - Cancel pending admit" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q07" DisplayName="VQQ – Virtual table query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M05" DisplayName="MFN/MFK - Patient location master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S08" DisplayName="SRM/SRR - Request modification of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A35" DisplayName="ADT/ACK - Merge patient information - account number only" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A26" DisplayName="ADT/ACK - Cancel pending transfer" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCB" DisplayName="PPP - PC/ Pathway (Problem-Oriented) Add" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T06" DisplayName="MDM/ACK - Document addendum notification and content" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C02" DisplayName="CRM - Cancel a patient registration on clinical trial (for clerical mistakes only)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A34" DisplayName="ADT/ACK - Merge patient information - patient ID only" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S25" DisplayName="SQM/SQR - Schedule query message and response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T10" DisplayName="MDM/ACK - Document replacement notification and content" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCL" DisplayName="PPT - PC/ Pathway (Goal-Oriented) Query Response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S24" DisplayName="SIU/ACK - Notification of opened (“unblocked”) schedule time slot(s)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A19" DisplayName="QRY/ADR - Patient query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I14" DisplayName="REF/RRI - Cancel patient referral" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A02" DisplayName="ADT/ACK - Transfer a patient" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M09" DisplayName="MFN/MFK - Test/observation (categorical) master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I12" DisplayName="REF/RRI - Patient referral" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S06" DisplayName="SRM/SRR - Request appointment deletion" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P05" DisplayName="BAR/ACK – Update account" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S17" DisplayName="SIU/ACK - Notification of appointment deletion" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S07" DisplayName="SRM/SRR - Request addition of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M01" DisplayName="MFN/MFK - Master file not otherwise specified (for backward compatibility only)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A07" DisplayName="ADT/ACK - Change an inpatient to an outpatient" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A08" DisplayName="ADT/ACK - Update patient information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="RGR" DisplayName="RGR - Pharmacy dose information query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P04" DisplayName="QRY/DSP – Generate bill and A/R statements" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T05" DisplayName="MDM/ACK - Document addendum notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="V02" DisplayName="VXX - Response to vaccination query returning multiple PID matches" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M08" DisplayName="MFN/MFK - Test/observation (numeric) master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R04" DisplayName="ORF - Response to query; transmission of requested observation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R02" DisplayName="QRY - Query for results of observation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A32" DisplayName="ADT/ACK - Cancel patient arriving - tracking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P08" DisplayName="PEX - Unsolicited update individual product experience report" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C03" DisplayName="CRM - Correct/update registration information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="V01" DisplayName="VXQ - Query for vaccination record" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I02" DisplayName="RQI/RPL - Request/receipt of patient selection display list" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T11" DisplayName="MDM/ACK - Document cancel notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P01" DisplayName="BAR/ACK - Add patient accounts" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A22" DisplayName="ADT/ACK - Patient returns from a “leave of absence”" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M10" DisplayName="MFN/MFK - Test /observation batteries master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A16" DisplayName="ADT/ACK - Pending discharge" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A30" DisplayName="ADT/ACK - Merge person information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C01" DisplayName="CRM - Register a patient on a clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R09" DisplayName="ERP – event replay response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC1" DisplayName="PPR - PC/ Problem Add" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="RDR" DisplayName="RDR - Pharmacy dispense information query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="W02" DisplayName="QRF - Waveform result, response to query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S02" DisplayName="SRM/SRR - Request appointment rescheduling" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A49" DisplayName="ADT/ACK - Change patient account number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I01" DisplayName="RQI/RPI - Request for insurance information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I08" DisplayName="RQA/RPA - Request for treatment authorization information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC8" DisplayName="PGL - PC/ Goal Delete" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T08" DisplayName="MDM/ACK - Document edit notification and content" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C08" DisplayName="CRM - Patient has gone off phase of clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A21" DisplayName="ADT/ACK - Patient goes on a “leave of absence”" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A45" DisplayName="ADT/ACK - Move visit information - visit number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C12" DisplayName="CSU - Update/correction of patient order/result information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCC" DisplayName="PPP - PC/ Pathway (Problem-Oriented) Update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A38" DisplayName="ADT/ACK - Cancel pre-admit" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q01" DisplayName="QRY/DSR - Query sent for immediate response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P09" DisplayName="SUR - Summary product experience report" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S21" DisplayName="SIU/ACK - Notification of discontinuation of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC3" DisplayName="PPR - PC/ Problem Delete" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A20" DisplayName="ADT/ACK - Bed status update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCK" DisplayName="QRY - PC/ Pathway (Goal-Oriented) Query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q06" DisplayName="OSQ/OSR - Query for order status" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC4" DisplayName="QRY - PC/ Problem Query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC7" DisplayName="PGL - PC/ Goal Update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T01" DisplayName="MDM/ACK - Original document notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A11" DisplayName="ADT/ACK - Cancel admit/visit notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A51" DisplayName="ADT/ACK - Change alternate visit ID" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I11" DisplayName="RQA/RPA - Request for cancellation of an authorization" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A31" DisplayName="ADT/ACK - Update person information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S11" DisplayName="SRM/SRR - Request deletion of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S18" DisplayName="SIU/ACK - Notification of addition of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A47" DisplayName="ADT/ACK - Change patient identifier list" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A44" DisplayName="ADT/ACK - Move account information - patient account number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCF" DisplayName="PTR - PC/ Pathway (Problem-Oriented) Query Response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="W01" DisplayName="ORU - Waveform result, unsolicited transmission of requested information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I09" DisplayName="RQA/RPA - Request for modification to an authorization" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q08" DisplayName="SPQ – Stored procedure request" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R07" DisplayName="EDR – enhanced display response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P03" DisplayName="DFT/ACK - Post detail financial transaction" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A41" DisplayName="ADT/ACK - Merge account - patient account number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A33" DisplayName="ADT/ACK - Cancel patient departing - tracking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R06" DisplayName="UDM - unsolicited update/display results" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A48" DisplayName="ADT/ACK - Change alternate patient ID" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S19" DisplayName="SIU/ACK - Notification of modification of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T07" DisplayName="MDM/ACK - Document edit notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I15" DisplayName="REF/RRI - Request patient referral status" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S23" DisplayName="SIU/ACK - Notification of blocked schedule time slot(s)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCH" DisplayName="PPG - PC/ Pathway (Goal-Oriented) Update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A18" DisplayName="ADT/ACK - Merge patient information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCE" DisplayName="QRY - PC/ Pathway (Problem-Oriented) Query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S20" DisplayName="SIU/ACK - Notification of cancellation of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PCA" DisplayName="PPV - PC/ Goal Response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A03" DisplayName="ADT/ACK - Discharge/end visit" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T12" DisplayName="QRY/DOC - Document query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A40" DisplayName="ADT/ACK - Merge patient - patient identifier list" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I07" DisplayName="PIN/ACK - Unsolicited insurance information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A25" DisplayName="ADT/ACK - Cancel pending discharge" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I10" DisplayName="RQA/RPA - Request for resubmission of an authorization" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R01" DisplayName="ORU/ACK - Unsolicited transmission of an observation message" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="V03" DisplayName="VXR - Vaccination record response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A05" DisplayName="ADT/ACK - Pre-admit a patient" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A37" DisplayName="ADT/ACK - Unlink patient information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="I06" DisplayName="RQC/RCL - Request/receipt of clinical data listing" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="R03" DisplayName="QRY/DSR Display-oriented results, query/unsol. update (for backward compatibility only)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S10" DisplayName="SRM/SRR - Request discontinuation of service/resource on appointment" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A17" DisplayName="ADT/ACK - Swap patients" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M02" DisplayName="MFN/MFK - Master file - staff practitioner" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="CNQ" DisplayName="QRY/EQQ/SPQ/VQQ/RQQ - Cancel query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC2" DisplayName="PPR - PC/ Problem Update" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T04" DisplayName="MDM/ACK - Document status change notification and content" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A36" DisplayName="ADT/ACK - Merge patient information - patient ID and account number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M11" DisplayName="MFN/MFK - Test/calculated observations master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M03" DisplayName="MFN/MFK - Master file - test/observation (for backward compatibility only)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C05" DisplayName="CRM - Patient enters phase of clinical trial" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="O01" DisplayName="ORM - Order message (also RDE, RDS, RGV, RAS)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="P02" DisplayName="BAR/ACK - Purge patient accounts" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="PC5" DisplayName="PRR - PC/ Problem Response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q09" DisplayName="RQQ – event replay query" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A09" DisplayName="ADT/ACK - Patient departing - tracking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="C06" DisplayName="CRM - Cancel patient entering a phase (clerical mistake)" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T02" DisplayName="MDM/ACK - Original document notification and content" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A13" DisplayName="ADT/ACK - Cancel discharge/end visit" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="Q05" DisplayName="UDM/ACK - Unsolicited display update message" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A10" DisplayName="ADT/ACK - Patient arriving - tracking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A15" DisplayName="ADT/ACK - Pending transfer" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S04" DisplayName="SRM/SRR - Request appointment cancellation" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S12" DisplayName="SIU/ACK - Notification of new appointment booking" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A29" DisplayName="ADT/ACK - Delete person information" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="A42" DisplayName="ADT/ACK - Merge visit - visit number" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="RER" DisplayName="RER - Pharmacy encoded order information query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="M06" DisplayName="MFN/MFK - Clinical study with phases and schedules master file" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="T03" DisplayName="MDM/ACK - Document status change notification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="ROR" DisplayName="R0R - Pharmacy prescription order query response" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S14" DisplayName="SIU/ACK - Notification of appointment modification" CodeSystem="HL70003" Usage="P"/>
+<ValueElement Value="S13" DisplayName="SIU/ACK - Notification of appointment rescheduling" CodeSystem="HL70003" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70043" Name="Condition code" Description="Condition code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="40" DisplayName="Same day transfer" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="56" DisplayName="Medical appropriateness" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="38" DisplayName="Semi-private room not available" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="57" DisplayName="SNF readmission" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="77" DisplayName="Provider accepts or is obligated/required due to a contractual arrangement or law to accept payment by a primary payer as payment in full" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="02" DisplayName="Condition is employment related" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="46" DisplayName="Non-availability statement on file" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="72" DisplayName="Self-care in unit" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="39" DisplayName="Private room medically necessary" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="12" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="29" DisplayName="Disabled beneficiary and/or family member’s LGHP is secondary to Medicare" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="75" DisplayName="Home - 100% reimbursement" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="19" DisplayName="Child retains mother’s name" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="36" DisplayName="General care patient in a special unit" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="09" DisplayName="Neither patient nor spouse is employed" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="03" DisplayName="Patient covered by insurance not reflected here" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="61" DisplayName="Cost outlier" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="05" DisplayName="Lien has been filed" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="70" DisplayName="Self-administered EPO" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="11" DisplayName="Disabled beneficiary but no LGHP" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="21" DisplayName="Billing for Denial Notice" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="48" DisplayName="Psychiatric residential treatment centers for children and adolescents" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="60" DisplayName="Day outlier" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="01" DisplayName="Military service related" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="06" DisplayName="ESRD patient in first 18 months of entitlement covered by employer group health insurance" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="13" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="32" DisplayName="Patient is student (cooperative/work study program)" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="68" DisplayName="Beneficiary elects to use life time reserve (LTR) days" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="10" DisplayName="Patient and/or spouse is employed but no EGHP exists" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="41" DisplayName="Partial hospitalization" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="80" DisplayName="Pregnant" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="20" DisplayName="Beneficiary requested billing" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="16" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="37" DisplayName="Ward accommodation as patient request" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="27" DisplayName="Patient referred to a sole community hospital for a diagnostic laboratory test" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="67" DisplayName="Beneficiary elects not to use life time reserve (LTR) days" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="12 ... 16" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="18" DisplayName="Maiden name retained" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="78" DisplayName="New coverage not implemented by HMO" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="76" DisplayName="Back-up in facility dialysis" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="34" DisplayName="Patient is student (Part time)" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="55" DisplayName="SNF bed not available" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="62" DisplayName="Payer code" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="66" DisplayName="Provider does not wish cost outlier payment" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="31" DisplayName="Patient is student (full time-day)" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="33" DisplayName="Patient is student (full time-night)" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="79" DisplayName="Corf services provided off-site" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="08" DisplayName="Beneficiary would not provide information concerning other insurance coverage" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="74" DisplayName="Home" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="71" DisplayName="Full care in unit" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="28" DisplayName="Patient and/or spouse’s EGHP is secondary to Medicare" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="15" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="07" DisplayName="Treatment of non-terminal condition for hospice patient" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="04" DisplayName="HMO enrollee" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="14" DisplayName="Payer codes." CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="26" DisplayName="VA eligible patient chooses to receive services in a medicare certified facility" CodeSystem="HL70043" Usage="P"/>
+<ValueElement Value="73" DisplayName="Self-care training" CodeSystem="HL70043" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70073" Name="Interest Rate Code" Description="Interest Rate Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70083" Name="Outlier Type" Description="Outlier Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="D" DisplayName="Outlier days" CodeSystem="HL70083" Usage="P"/>
+<ValueElement Value="C" DisplayName="Outlier cost" CodeSystem="HL70083" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70018" Name="Patient Type" Description="Patient Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70201" Name="Telecommunication use code" Description="Telecommunication use code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="BPN" DisplayName="Beeper Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="EMR" DisplayName="Emergency Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="ASN" DisplayName="Answering Service Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="NET" DisplayName="Network (email) Address" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="ORN" DisplayName="Other Residence Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="VHN" DisplayName="Vacation Home Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="PRN" DisplayName="Primary Residence Number" CodeSystem="HL70201" Usage="P"/>
+<ValueElement Value="WPN" DisplayName="Work Number" CodeSystem="HL70201" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70056" Name="DRG Grouper Review Code" Description="DRG Grouper Review Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70111" Name="Delete Account Code" Description="Delete Account Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70076" Name="Message type" Description="Message type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="RQP" DisplayName="Request patient demographics" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ORF" DisplayName="Observ. result/record response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="OSR" DisplayName="Order status response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SIU" DisplayName="Schedule information unsolicited" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="NMR" DisplayName="Network management response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ERP" DisplayName="Event replay response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PGL" DisplayName="Patient goal" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="BAR" DisplayName="Add/change billing account" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MFN" DisplayName="Master files notification" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="QRY" DisplayName="Query, original mode" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ORU" DisplayName="Observ result/unsolicited" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RRA" DisplayName="Pharmacy administration acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PPG" DisplayName="Patient pathway (goal-oriented) message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RQQ" DisplayName="Event replay query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="VXR" DisplayName="Vaccination query record response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="EQQ" DisplayName="Embedded query language query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="VXU" DisplayName="Unsolicited vaccination record update" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MFD" DisplayName="Master files delayed application acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MDM" DisplayName="Documentation message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PEX" DisplayName="Product experience" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PTR" DisplayName="Patient pathway (problem-oriented) response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ACK" DisplayName="General acknowledgment message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="VQQ" DisplayName="Virtual table query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RQC" DisplayName="Request clinical information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MCF" DisplayName="Delayed acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PPP" DisplayName="Patient pathway (problem-oriented) message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RPR" DisplayName="Return patient list" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="VXX" DisplayName="Vaccination query response with multiple PID matches" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SRM" DisplayName="Schedule request" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RPI" DisplayName="Return patient information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SQM" DisplayName="Schedule query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="CSU" DisplayName="Unsolicited clinical study data" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RQI" DisplayName="Request patient information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="DSR" DisplayName="Display response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RGR" DisplayName="Pharmacy dose information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="CRM" DisplayName="Clinical study registration" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ARD" DisplayName="Ancillary RPT (display) (for backward compatibility only)" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RQA" DisplayName="Request patient authorization" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RRI" DisplayName="Return patient referral" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RCL" DisplayName="Return clinical list" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RRE" DisplayName="Pharmacy encoded order acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="DOC" DisplayName="Document response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RCI" DisplayName="Return clinical information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ORR" DisplayName="Order acknowledgment message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PIN" DisplayName="Patient insurance information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RDE" DisplayName="Pharmacy encoded order message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ROR" DisplayName="Pharmacy prescription order response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RAS" DisplayName="Pharmacy administration message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RRG" DisplayName="Pharmacy give acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="OSQ" DisplayName="Order status query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RGV" DisplayName="Pharmacy give message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="NMQ" DisplayName="Network management query" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RDR" DisplayName="Pharmacy dispense information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="EDR" DisplayName="Enhanced display response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PPR" DisplayName="Patient problem" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RAR" DisplayName="Pharmacy administration information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="REF" DisplayName="Patient referral" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SUR" DisplayName="Summary product experience report" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RER" DisplayName="Pharmacy encoded order information" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SQR" DisplayName="Schedule query response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ADR" DisplayName="ADT response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PRR" DisplayName="Patient problem response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SPQ" DisplayName="Stored procedure request" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PPV" DisplayName="Patient goal response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RRD" DisplayName="Pharmacy dispense acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="VXQ" DisplayName="Query for vaccination record" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="UDM" DisplayName="Unsolicited display message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RDS" DisplayName="Pharmacy dispense message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ADT" DisplayName="ADT message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="NMD" DisplayName="Network management data" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RPL" DisplayName="Return patient display list" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="QCK" DisplayName="Query general acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="RPA" DisplayName="Return patient authorization" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="PPT" DisplayName="Patient pathway (goal oriented) response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="DFT" DisplayName="Detail financial transaction" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="TBR" DisplayName="Tabular data response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MFK" DisplayName="Master files application acknowledgment" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MFR" DisplayName="Master files query response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="ORM" DisplayName="Order message" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="SRR" DisplayName="Scheduled request response" CodeSystem="HL70076" Usage="P"/>
+<ValueElement Value="MFQ" DisplayName="Master files query" CodeSystem="HL70076" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70131" Name="Contact Role" Description="Contact Role" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70146" Name="Amount type" Description="Amount type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="PC" DisplayName="Percentage" CodeSystem="HL70146" Usage="P"/>
+<ValueElement Value="LM" DisplayName="Limit" CodeSystem="HL70146" Usage="P"/>
+<ValueElement Value="RT" DisplayName="Rate" CodeSystem="HL70146" Usage="P"/>
+<ValueElement Value="UL" DisplayName="Unlimited" CodeSystem="HL70146" Usage="P"/>
+<ValueElement Value="DF" DisplayName="Differential" CodeSystem="HL70146" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70308" Name="Floor" Description="Floor" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70189" Name="Ethnic Group" Description="Ethnic Group" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70151" Name="Second Opinion Status" Description="Second Opinion Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70099" Name="VIP Indicator" Description="VIP Indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70328" Name="Employee Classification" Description="Employee Classification" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70204" Name="Organizational name type" Description="Organizational name type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="SL" DisplayName="Stock exchange listing name" CodeSystem="HL70204" Usage="P"/>
+<ValueElement Value="D" DisplayName="Display name" CodeSystem="HL70204" Usage="P"/>
+<ValueElement Value="A" DisplayName="Alias name" CodeSystem="HL70204" Usage="P"/>
+<ValueElement Value="L" DisplayName="Legal name" CodeSystem="HL70204" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70342" Name="Military recipient" Description="Military recipient" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70149" Name="Day type" Description="Day type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="DE" DisplayName="Denied" CodeSystem="HL70149" Usage="P"/>
+<ValueElement Value="AP" DisplayName="Approved" CodeSystem="HL70149" Usage="P"/>
+<ValueElement Value="PE" DisplayName="Pending" CodeSystem="HL70149" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70348" Name="Special program indicator" Description="Special program indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="08" DisplayName="Induced abortion victim rape/incest" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="07" DisplayName="Induced abortion-danger to life" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="03" DisplayName="Special federal funding" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="01" DisplayName="EPSDT-CHAP" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="05" DisplayName="Disability" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="02" DisplayName="Physically handicapped children’s program" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="06" DisplayName="PPV/Medicare 100% payment" CodeSystem="HL70348" Usage="P"/>
+<ValueElement Value="04" DisplayName="Family planning" CodeSystem="HL70348" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70287" Name="Problem/Goal Action code" Description="Problem/Goal Action code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="CO" DisplayName="CORRECT" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="DE" DisplayName="DELETE" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="LI" DisplayName="LINK" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="UC" DisplayName="UNCHANGED" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="AD" DisplayName="ADD" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="UN" DisplayName="UNLINK" CodeSystem="HL70287" Usage="P"/>
+<ValueElement Value="UP" DisplayName="UPDATE" CodeSystem="HL70287" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70114" Name="Diet Type" Description="Diet Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70059" Name="Consent Code" Description="Consent Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70362" Name="Sending/receiving facility" Description="Sending/receiving facility" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70295" Name="Handicap" Description="Handicap" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70305" Name="Person Location Type" Description="Person Location Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70302" Name="Point Of Care" Description="Point Of Care" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70232" Name="Insurance company contact reason" Description="Insurance company contact reason" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="01" DisplayName="Medicare claim status" CodeSystem="HL70232" Usage="P"/>
+<ValueElement Value="03" DisplayName="Name/address change" CodeSystem="HL70232" Usage="P"/>
+<ValueElement Value="02" DisplayName="Medicaid claim status" CodeSystem="HL70232" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70137" Name="Mail claim party" Description="Mail claim party" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="P" DisplayName="Patient" CodeSystem="HL70137" Usage="P"/>
+<ValueElement Value="O" DisplayName="Other" CodeSystem="HL70137" Usage="P"/>
+<ValueElement Value="G" DisplayName="Guarantor" CodeSystem="HL70137" Usage="P"/>
+<ValueElement Value="E" DisplayName="Employer" CodeSystem="HL70137" Usage="P"/>
+<ValueElement Value="I" DisplayName="Insurance company" CodeSystem="HL70137" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70212" Name="Nationality" Description="Nationality" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70127" Name="Allergy type" Description="Allergy type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="MC" DisplayName="Miscellaneous contraindication" CodeSystem="HL70127" Usage="P"/>
+<ValueElement Value="FA" DisplayName="Food allergy" CodeSystem="HL70127" Usage="P"/>
+<ValueElement Value="DA" DisplayName="Drug allergy" CodeSystem="HL70127" Usage="P"/>
+<ValueElement Value="MA" DisplayName="Miscellaneous allergy" CodeSystem="HL70127" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70085" Name="Observation result status codes interpretation" Description="Observation result status codes interpretation" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="O" DisplayName="Order detail description only (no result)" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="D" DisplayName="Deletes the OBX record" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="C" DisplayName="Record coming over is a correction and thus replaces a final result" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="N" DisplayName="Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought." CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="I" DisplayName="Specimen in lab; results pending" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="R" DisplayName="Results entered -- not verified" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="X" DisplayName="Results cannot be obtained for this observation" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="F" DisplayName="Final results; Can only be changed with a corrected result." CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="W" DisplayName="Post original as wrong, e.g., transmitted for wrong patient" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="U" DisplayName="Results status change to final without retransmitting results already sent as ‘preliminary.’ E.g., radiology changes status from preliminary to final" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="P" DisplayName="Preliminary results" CodeSystem="HL70085" Usage="P"/>
+<ValueElement Value="S" DisplayName="Partial results" CodeSystem="HL70085" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70150" Name="Pre-certification patient type" Description="Pre-certification patient type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="ER" DisplayName="Emergency" CodeSystem="HL70150" Usage="P"/>
+<ValueElement Value="IPE" DisplayName="Inpatient elective" CodeSystem="HL70150" Usage="P"/>
+<ValueElement Value="UR" DisplayName="Urgent" CodeSystem="HL70150" Usage="P"/>
+<ValueElement Value="OPE" DisplayName="Outpatient elective" CodeSystem="HL70150" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70022" Name="Billing Status" Description="Billing Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70307" Name="Building" Description="Building" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70300" Name="Namespace ID" Description="Namespace ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70340" Name="Procedure Code Modifier" Description="Procedure Code Modifier" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70215" Name="Publicity Code" Description="Publicity Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70052" Name="Diagnosis Type" Description="Diagnosis Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="W" DisplayName="Working" CodeSystem="HL70052" Usage="P"/>
+<ValueElement Value="F" DisplayName="Final" CodeSystem="HL70052" Usage="P"/>
+<ValueElement Value="A" DisplayName="Admitting" CodeSystem="HL70052" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70288" Name="Census Tract" Description="Census Tract" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70110" Name="Transfer to Bad Debt Code" Description="Transfer to Bad Debt Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70045" Name="Courtesy Code" Description="Courtesy Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70219" Name="Recurring Service Code" Description="Recurring Service Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70363" Name="Assigning Authority" Description="Assigning Authority" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70190" Name="Address type" Description="Address type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="BA" DisplayName="Bad address" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="L" DisplayName="Legal Address" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="B" DisplayName="Firm/Business" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="BR" DisplayName="Residence at birth (home address at time of birth)" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="H" DisplayName="Home" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="RH" DisplayName="Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services." CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="C" DisplayName="Current Or Temporary" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="BDL" DisplayName="Birth delivery location (address where birth occurred)" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="P" DisplayName="Permanent" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="F" DisplayName="Country Of Origin" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="M" DisplayName="Mailing" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="N" DisplayName="Birth (nee) (birth address, not otherwise specified)" CodeSystem="HL70190" Usage="P"/>
+<ValueElement Value="O" DisplayName="Office" CodeSystem="HL70190" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70313" Name="Policy Source" Description="Policy Source" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70143" Name="Non-covered Insurance Code" Description="Non-covered Insurance Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70098" Name="Type of agreement" Description="Type of agreement" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="S" DisplayName="Standard" CodeSystem="HL70098" Usage="P"/>
+<ValueElement Value="M" DisplayName="Maternity" CodeSystem="HL70098" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unified" CodeSystem="HL70098" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70005" Name="Race" Description="Race" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70103" Name="Processing ID" Description="Processing ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="T" DisplayName="Training" CodeSystem="HL70103" Usage="P"/>
+<ValueElement Value="P" DisplayName="Production" CodeSystem="HL70103" Usage="P"/>
+<ValueElement Value="D" DisplayName="Debugging" CodeSystem="HL70103" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70231" Name="Student status" Description="Student status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="P" DisplayName="Part-time student" CodeSystem="HL70231" Usage="P"/>
+<ValueElement Value="N" DisplayName="Not a student" CodeSystem="HL70231" Usage="P"/>
+<ValueElement Value="F" DisplayName="Full-time student" CodeSystem="HL70231" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70173" Name="Coordination of benefits" Description="Coordination of benefits" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="IN" DisplayName="Independent" CodeSystem="HL70173" Usage="P"/>
+<ValueElement Value="CO" DisplayName="Coordination" CodeSystem="HL70173" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70346" Name="Certification Agency" Description="Certification Agency" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70068" Name="Guarantor Type" Description="Guarantor Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70306" Name="Location Status" Description="Location Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70116" Name="Bed status" Description="Bed status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="I" DisplayName="Isolated" CodeSystem="HL70116" Usage="P"/>
+<ValueElement Value="K" DisplayName="Contaminated" CodeSystem="HL70116" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unoccupied" CodeSystem="HL70116" Usage="P"/>
+<ValueElement Value="C" DisplayName="Closed" CodeSystem="HL70116" Usage="P"/>
+<ValueElement Value="H" DisplayName="Housekeeping" CodeSystem="HL70116" Usage="P"/>
+<ValueElement Value="O" DisplayName="Occupied" CodeSystem="HL70116" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70086" Name="Plan Type" Description="Plan Type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70289" Name="County Code" Description="County Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70046" Name="Credit Rating" Description="Credit Rating" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70051" Name="Diagnosis Code" Description="Diagnosis Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70006" Name="Religion" Description="Religion" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70214" Name="Special Program Codes" Description="Special Program Codes" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70069" Name="Hospital Service" Description="Hospital Service" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70172" Name="Veterans Military Status" Description="Veterans Military Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70347" Name="Auto Accident State" Description="Auto Accident State" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70104" Name="Version ID" Description="Version ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="2.0" DisplayName="Release 2.0" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.3.2" DisplayName="Release 2.3.2" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.2" DisplayName="Release 2.2" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.3" DisplayName="Release 2.3" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.0D" DisplayName="Demo 2.0" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.1" DisplayName="Release 2. 1" CodeSystem="HL70104" Usage="P"/>
+<ValueElement Value="2.3.1" DisplayName="Release 2.3.1" CodeSystem="HL70104" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70062" Name="Event reason" Description="Event reason" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="01" DisplayName="Patient request" CodeSystem="HL70062" Usage="P"/>
+<ValueElement Value="03" DisplayName="Census management" CodeSystem="HL70062" Usage="P"/>
+<ValueElement Value="02" DisplayName="Physician order" CodeSystem="HL70062" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70144" Name="Eligibility source" Description="Eligibility source" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="6" DisplayName="Verbal information" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="1" DisplayName="Insurance company" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="5" DisplayName="Signed statement on file" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="4" DisplayName="Insured presented card" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="7" DisplayName="None" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="2" DisplayName="Employer" CodeSystem="HL70144" Usage="P"/>
+<ValueElement Value="3" DisplayName="Insured presented policy" CodeSystem="HL70144" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70312" Name="Policy Scope" Description="Policy Scope" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70202" Name="Telecommunication equipment type" Description="Telecommunication equipment type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="MD" DisplayName="Modem" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="PH" DisplayName="Telephone" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="FX" DisplayName="Fax" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="X.400" DisplayName="X.400 email address: Use Only If Telecommunication Use Code Is NET" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="BP" DisplayName="Beeper" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="CP" DisplayName="Cellular Phone" CodeSystem="HL70202" Usage="P"/>
+<ValueElement Value="Internet" DisplayName="Internet Address: Use Only If Telecommunication Use Code Is NET" CodeSystem="HL70202" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70230" Name="Procedure functional type" Description="Procedure functional type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="A" DisplayName="Anesthesia" CodeSystem="HL70230" Usage="P"/>
+<ValueElement Value="D" DisplayName="Diagnostic procedure" CodeSystem="HL70230" Usage="P"/>
+<ValueElement Value="P" DisplayName="Procedure for treatment (therapeutic, including operations)" CodeSystem="HL70230" Usage="P"/>
+<ValueElement Value="I" DisplayName="Invasive procedure not classified elsewhere (e.g., IV, catheter, etc.)" CodeSystem="HL70230" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70220" Name="Living arrangement" Description="Living arrangement" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="R" DisplayName="Relative" CodeSystem="HL70220" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unknown" CodeSystem="HL70220" Usage="P"/>
+<ValueElement Value="A" DisplayName="Alone" CodeSystem="HL70220" Usage="P"/>
+<ValueElement Value="I" DisplayName="Institution" CodeSystem="HL70220" Usage="P"/>
+<ValueElement Value="S" DisplayName="Spouse Only" CodeSystem="HL70220" Usage="P"/>
+<ValueElement Value="F" DisplayName="Family" CodeSystem="HL70220" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70112" Name="Discharge disposition" Description="Discharge disposition" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="30" DisplayName="Still patient or expected to return for outpatient services" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="33" DisplayName="Still patient to be defined at state level, if necessary 33" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="39" DisplayName="Still patient to be defined at state level, if necessary 39" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="11" DisplayName="Discharge to be defined at state level, if necessary 11" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="20" DisplayName="Expired" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="41" DisplayName="Expired in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="15" DisplayName="Discharge to be defined at state level, if necessary 15" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="22" DisplayName="Expired to be defined at state level, if necessary 22" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="02" DisplayName="Discharged/transferred to another short term general hospital for inpatient care" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="13" DisplayName="Discharge to be defined at state level, if necessary 13" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="34" DisplayName="Still patient to be defined at state level, if necessary 34" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="03" DisplayName="Discharged/transferred to skilled nursing facility (SNF)" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="04" DisplayName="Discharged/transferred to an intermediate care facility (ICF)" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="29" DisplayName="Expired to be defined at state level, if necessary 29" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="26" DisplayName="Expired to be defined at state level, if necessary 26" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="06" DisplayName="Discharged/transferred to home under care of organized home health service organization" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="31" DisplayName="Still patient to be defined at state level, if necessary 31" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="16" DisplayName="Discharge to be defined at state level, if necessary 16" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="23" DisplayName="Expired to be defined at state level, if necessary 23" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="12" DisplayName="Discharge to be defined at state level, if necessary 12" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="24" DisplayName="Expired to be defined at state level, if necessary 24" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="37" DisplayName="Still patient to be defined at state level, if necessary 37" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="18" DisplayName="Discharge to be defined at state level, if necessary 18" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="05" DisplayName="Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="09" DisplayName="Admitted as an inpatient to this hospital" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="32" DisplayName="Still patient to be defined at state level, if necessary 32" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="28" DisplayName="Expired to be defined at state level, if necessary 28" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="19" DisplayName="Discharge to be defined at state level, if necessary 19" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="42" DisplayName="Expired - place unknown" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="27" DisplayName="Expired to be defined at state level, if necessary 27" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="25" DisplayName="Expired to be defined at state level, if necessary 25" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="35" DisplayName="Still patient to be defined at state level, if necessary 35" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="14" DisplayName="Discharge to be defined at state level, if necessary 14" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="08" DisplayName="Discharged/transferred to home under care of Home IV provider" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="38" DisplayName="Still patient to be defined at state level, if necessary 38" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="21" DisplayName="Expired to be defined at state level, if necessary 21" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="07" DisplayName="Left against medical advice or discontinued care" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="40" DisplayName="Expired at home" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="10" DisplayName="Discharge to be defined at state level, if necessary 10" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="17" DisplayName="Discharge to be defined at state level, if necessary 17" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="36" DisplayName="Still patient to be defined at state level, if necessary 36" CodeSystem="HL70112" Usage="P"/>
+<ValueElement Value="01" DisplayName="Discharged to home or self care (routine discharge)" CodeSystem="HL70112" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70135" Name="Assignment of benefits" Description="Assignment of benefits" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="N" DisplayName="No" CodeSystem="HL70135" Usage="P"/>
+<ValueElement Value="Y" DisplayName="Yes" CodeSystem="HL70135" Usage="P"/>
+<ValueElement Value="M" DisplayName="Modified assignment" CodeSystem="HL70135" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70115" Name="Servicing Facility" Description="Servicing Facility" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70155" Name="Accept/application acknowledgment conditions" Description="Accept/application acknowledgment conditions" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="NE" DisplayName="Never" CodeSystem="HL70155" Usage="P"/>
+<ValueElement Value="ER" DisplayName="Error/reject conditions only" CodeSystem="HL70155" Usage="P"/>
+<ValueElement Value="SU" DisplayName="Successful completion only" CodeSystem="HL70155" Usage="P"/>
+<ValueElement Value="AL" DisplayName="Always" CodeSystem="HL70155" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70200" Name="Name type" Description="Name type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="M" DisplayName="Maiden Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unspecified" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="A" DisplayName="Alias Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="S" DisplayName="Coded Pseudo-Name to ensure anonymity" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="T" DisplayName="Tribal/Community Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="D" DisplayName="Display Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="L" DisplayName="Legal Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="C" DisplayName="Adopted Name" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="B" DisplayName="Name at Birth" CodeSystem="HL70200" Usage="P"/>
+<ValueElement Value="P" DisplayName="Name of Partner/Spouse" CodeSystem="HL70200" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70125" Name="Value type" Description="Value type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="RP" DisplayName="Reference Pointer" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="XPN" DisplayName="Extended Person Name" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="XAD" DisplayName="Extended Address" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="MO" DisplayName="Money" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="TX" DisplayName="Text Data (Display)" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CK" DisplayName="Composite ID With Check Digit" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="XCN" DisplayName="Extended Composite Name And Number For Persons" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="ST" DisplayName="String Data." CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="NM" DisplayName="Numeric" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CF" DisplayName="Coded Element With Formatted Values" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="FT" DisplayName="Formatted Text (Display)" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="TM" DisplayName="Time" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="AD" DisplayName="Address" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="TS" DisplayName="Time Stamp (Date & Time)" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="DT" DisplayName="Date" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="TN" DisplayName="Telephone Number" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="XTN" DisplayName="Extended Telecommunications Number" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CN" DisplayName="Composite ID And Name" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="PN" DisplayName="Person Name" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CX" DisplayName="Extended Composite ID With Check Digit" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="XON" DisplayName="Extended Composite Name And Number For Organizations" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="SN" DisplayName="Structured Numeric" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CE" DisplayName="Coded Entry" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="CP" DisplayName="Composite Price" CodeSystem="HL70125" Usage="P"/>
+<ValueElement Value="ED" DisplayName="Encapsulated Data" CodeSystem="HL70125" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70145" Name="Room type" Description="Room type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="2PRI" DisplayName="Second private room" CodeSystem="HL70145" Usage="P"/>
+<ValueElement Value="ICU" DisplayName="Intensive care unit" CodeSystem="HL70145" Usage="P"/>
+<ValueElement Value="SPR" DisplayName="Semi-private room" CodeSystem="HL70145" Usage="P"/>
+<ValueElement Value="2SPR" DisplayName="Second semi-private room" CodeSystem="HL70145" Usage="P"/>
+<ValueElement Value="2ICU" DisplayName="Second intensive care unit" CodeSystem="HL70145" Usage="P"/>
+<ValueElement Value="PRI" DisplayName="Private room" CodeSystem="HL70145" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70148" Name="Penalty type" Description="Penalty type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="AT" DisplayName="Currency amount" CodeSystem="HL70148" Usage="P"/>
+<ValueElement Value="PC" DisplayName="Percentage" CodeSystem="HL70148" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70349" Name="PSRO/UR approval indicator" Description="PSRO/UR approval indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="3" DisplayName="Partial approval" CodeSystem="HL70349" Usage="P"/>
+<ValueElement Value="4" DisplayName="Admission denied" CodeSystem="HL70349" Usage="P"/>
+<ValueElement Value="1" DisplayName="Approved by the PSRO/UR as billed" CodeSystem="HL70349" Usage="P"/>
+<ValueElement Value="2" DisplayName="Automatic approval as billed based on focused review" CodeSystem="HL70349" Usage="P"/>
+<ValueElement Value="5" DisplayName="Postpayment review applicable" CodeSystem="HL70349" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70213" Name="Purge status" Description="Purge status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="D" DisplayName="The visit is marked for deletion and the user cannot enter new data against it." CodeSystem="HL70213" Usage="P"/>
+<ValueElement Value="I" DisplayName="The visit is marked inactive and the user cannot enter new data against it." CodeSystem="HL70213" Usage="P"/>
+<ValueElement Value="P" DisplayName="Marked for purge. User is no longer able to update the visit." CodeSystem="HL70213" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70233" Name="Non-concur Code/Description" Description="Non-concur Code/Description" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70223" Name="Living dependency" Description="Living dependency" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="CB" DisplayName="Common Bath" CodeSystem="HL70223" Usage="P"/>
+<ValueElement Value="M" DisplayName="Medical Supervision Required" CodeSystem="HL70223" Usage="P"/>
+<ValueElement Value="D" DisplayName="Spouse dependent" CodeSystem="HL70223" Usage="P"/>
+<ValueElement Value="S" DisplayName="Small children" CodeSystem="HL70223" Usage="P"/>
+<ValueElement Value="WU" DisplayName="Walk up" CodeSystem="HL70223" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70309" Name="Coverage type" Description="Coverage type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="B" DisplayName="Both hospital and physician" CodeSystem="HL70309" Usage="P"/>
+<ValueElement Value="H" DisplayName="Hospital/institutional" CodeSystem="HL70309" Usage="P"/>
+<ValueElement Value="P" DisplayName="Physician/professional" CodeSystem="HL70309" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70203" Name="Identifier type" Description="Identifier type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="NNxxx" DisplayName="National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="FI" DisplayName="Facility ID" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="RRI" DisplayName="Regional registry ID" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="SL" DisplayName="State license" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="EI" DisplayName="Employee number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="LN" DisplayName="License number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="XX" DisplayName="Organization identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="GI" DisplayName="Guarantor internal identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="DN" DisplayName="Doctor number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="PRN" DisplayName="Provider number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="MC" DisplayName="Medicare number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="UPIN" DisplayName="Medicare/HCFA’s Universal Physician Identification numbers" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="PN" DisplayName="Person number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="AN" DisplayName="Account number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="DS" DisplayName="Discover Card" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="NE" DisplayName="National employer identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="NPI" DisplayName="National provider identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="RR" DisplayName="Railroad Retirement number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="MA" DisplayName="Medicaid number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="DI" DisplayName="Diner’s Club card" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="SS" DisplayName="Social Security number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="SR" DisplayName="State registry ID" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="LR" DisplayName="Local Registry ID" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="PT" DisplayName="Patient external identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="VS" DisplayName="VISA" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="WC" DisplayName="WIC identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="GN" DisplayName="Guarantor external identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unspecified" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="AM" DisplayName="American Express" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="VN" DisplayName="Visit number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="MR" DisplayName="Medical record number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="NI" DisplayName="National unique individual identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="MS" DisplayName="MasterCard" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="PI" DisplayName="Patient internal identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="DL" DisplayName="Driver’s license number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="BR" DisplayName="Birth registry number" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="NH" DisplayName="National Health Plan Identifier" CodeSystem="HL70203" Usage="P"/>
+<ValueElement Value="EN" DisplayName="Employer number" CodeSystem="HL70203" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70188" Name="Operator ID" Description="Operator ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70359" Name="Diagnosis priority" Description="Diagnosis priority" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="0" DisplayName="not included in diagnosis ranking" CodeSystem="HL70359" Usage="P"/>
+<ValueElement Value="1" DisplayName="the primary diagnosis" CodeSystem="HL70359" Usage="P"/>
+<ValueElement Value="2 and higher" DisplayName="for ranked secondary diagnoses" CodeSystem="HL70359" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70341" Name="Guarantor Credit Rating Code" Description="Guarantor Credit Rating Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70301" Name="Universal ID type" Description="Universal ID type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="L" DisplayName="Local" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="L,M,N" DisplayName="Local" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="Random" DisplayName="Random" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="ISO" DisplayName="ISO Object Identifier" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="GUID" DisplayName="globally unique identifier" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="N" DisplayName="Local" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="x400" DisplayName="X.400 MHS identifier" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="UUID" DisplayName="Universal Unique Identifier" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="HCD" DisplayName="CEN Healthcare Coding Identifier" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="DNS" DisplayName="Domain Name System" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="M" DisplayName="Local" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="x500" DisplayName="X500 directory Name" CodeSystem="HL70301" Usage="P"/>
+<ValueElement Value="HL7" DisplayName="HL7 registration schemes" CodeSystem="HL70301" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70351" Name="Occurrence span" Description="Occurrence span" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="70" DisplayName="Qualifying stay dates for SNF" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="76" DisplayName="Patient liability" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="72" DisplayName="First/last visit" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="M0" DisplayName="PRO/UR approved stay dates" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="78" DisplayName="SNF prior stay dates" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="74" DisplayName="Non-covered level of care" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="71" DisplayName="Prior stay dates" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="73" DisplayName="Benefit eligibility period" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="79" DisplayName="Payer code" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="75" DisplayName="SNF level of care" CodeSystem="HL70351" Usage="P"/>
+<ValueElement Value="77" DisplayName="Provider liability period" CodeSystem="HL70351" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70296" Name="Primary Language" Description="Primary Language" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70311" Name="Job Status" Description="Job Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70361" Name="Sending/receiving application" Description="Sending/receiving application" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70316" Name="Organ donor" Description="Organ donor" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="U" DisplayName="Unknown" CodeSystem="HL70316" Usage="P"/>
+<ValueElement Value="I" DisplayName="No, patient is not a documented donor, but information was provided" CodeSystem="HL70316" Usage="P"/>
+<ValueElement Value="F" DisplayName="Yes, patient is a donor, but card is not on file" CodeSystem="HL70316" Usage="P"/>
+<ValueElement Value="Y" DisplayName="Yes, patient is a donor and card is on file" CodeSystem="HL70316" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70354" Name="Message structure" Description="Message structure" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="ADT_A01" DisplayName="A01, A04, A05, A08, A13, A14, A28, A31" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="CRM_C01" DisplayName="C01, C02, C03, C04, C05, C06, C07, C08" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M10" DisplayName="M10" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="VXQ_V01" DisplayName="V01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RCL_I06" DisplayName="I06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQA_I08" DisplayName="I08, I09, I10, I11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PPR_PC1" DisplayName="PC1, PC2, PC3" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A43" DisplayName="A43, A44" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SUR_P09" DisplayName="P09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A20" DisplayName="A20" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="BAR_P01" DisplayName="P01, P05" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="CSU_C09" DisplayName="C09, C10, C11, C12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RGR_RGR" DisplayName="RGR" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRI_I12" DisplayName="I12, I13, I14, I15" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RPR_I03" DisplayName="I03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="BAR_P02" DisplayName="P02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="EQQ_Q04" DisplayName="Q04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="BAR_P06" DisplayName="P06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M01" DisplayName="M01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SQR_S25" DisplayName="S25" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_T12" DisplayName="T12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQQ_Q09" DisplayName="Q09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORU_R01" DisplayName="R01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRO_O02" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="UDM_Q05" DisplayName="Q05" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M09" DisplayName="M09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFK_M01" DisplayName="M01, M03, M05, M06, M07, M08, M09, M10, M11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A50" DisplayName="A50, A51" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRD_O02" DisplayName="O02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M07" DisplayName="M07" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORN_O02" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RAS_O01" DisplayName="O01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="DSR_Q03" DisplayName="Q03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORU_W01" DisplayName="W01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="VXR_V03" DisplayName="V03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MDM_T01" DisplayName="T01, T03, T05, T07, T09, T11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RDO_O01" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A17" DisplayName="A17" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QCK_Q02" DisplayName="Q02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RER_RER" DisplayName="RER" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ERP_R09" DisplayName="R09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MDM_T02" DisplayName="T02, T04, T06, T08, T10" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PPV_PCA" DisplayName="PCA" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RAS_O02" DisplayName="O022" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M08" DisplayName="M08" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A38" DisplayName="A38" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="DOC_T12" DisplayName="T12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORM_Q06" DisplayName="Q06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="OSR_Q06" DisplayName="Q06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PPT_PCL" DisplayName="PCL" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PRR_PC5" DisplayName="PC5" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQP_I04" DisplayName="I04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SRM_T12" DisplayName="T12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SRR_T12" DisplayName="T12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQC_I06" DisplayName="I06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORR_O02" DisplayName="O02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PPP_PCB" DisplayName="PCB, PCD" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORD_O02" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RGV_O01" DisplayName="O01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A37" DisplayName="A37" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A06" DisplayName="A06, A07" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M05" DisplayName="M05" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SQM_S25" DisplayName="S25" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_Q01" DisplayName="Q01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RCI_I05" DisplayName="I05" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A45" DisplayName="A45" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="REF_I12" DisplayName="I12, I13, I14, I15" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A09" DisplayName="A09, A10, A11, A15" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PIN_I07" DisplayName="I07" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_R02" DisplayName="R02, R04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A03" DisplayName="A03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A28" DisplayName="A28, A31" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_Q02" DisplayName="Q02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RPA_I08" DisplayName="I08, I09. I10, 1II" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORS_O02" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RDR_RDR" DisplayName="RDR" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A24" DisplayName="A24" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SRM_S01" DisplayName="S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RPI_I0I" DisplayName="I01, I04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRG_O02" DisplayName="O02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="VQQ_Q07" DisplayName="Q07" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SIU_S12" DisplayName="S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S26" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="VXX_V02" DisplayName="V02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RDS_O01" DisplayName="O01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQC_I05" DisplayName="I05" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRE_O02" DisplayName="O02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="VXU_V04" DisplayName="V04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A02" DisplayName="A02, A21, A22, A23, A25, A26, A27, A29, A32, A33" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PGL_PC6" DisplayName="PC6, PC7, PC8" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORR_Q06" DisplayName="Q06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="OMD_O01" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFD_P09" DisplayName="P09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M11" DisplayName="M11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RAR_RAR" DisplayName="RAR" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A30" DisplayName="A30, A34, A35, 136, A46, A47, A48, A49" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PPG_PCG" DisplayName="PCC, PCH, PCJ" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_A19" DisplayName="A19" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="OMN_O01" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADR_A19" DisplayName="A19" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RDE_O01" DisplayName="O01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ACK" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A39" DisplayName="A39, A40, A41, A42" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="DFT_P03" DisplayName="P03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A18" DisplayName="A18" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RQI_I0I" DisplayName="I01, I02, I03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M06" DisplayName="M06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A16" DisplayName="A16" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="OMS_O01" DisplayName="" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M03" DisplayName="M03" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="TBR_R09" DisplayName="R09" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ARD_A19" DisplayName="A19" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="OSQ_Q06" DisplayName="Q06" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ROR_ROR" DisplayName="ROR" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="MFN_M02" DisplayName="M02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PTR_PCF" DisplayName="PCF" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ADT_A12" DisplayName="A12" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="QRY_PC4" DisplayName="PC4, PC9, PCE, PCK" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="PEX_P07" DisplayName="P07, P08" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORF_R02" DisplayName="R02, R04" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RRA_O02" DisplayName="O02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="ORM_O01" DisplayName="O01" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SPQ_Q08" DisplayName="Q08" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="RPL_I02" DisplayName="I02" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="SRR_S01" DisplayName="S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="EDR_R07" DisplayName="R07" CodeSystem="HL70354" Usage="P"/>
+<ValueElement Value="DSR_Q01" DisplayName="Q01" CodeSystem="HL70354" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70299" Name="Encoding" Description="Encoding" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="Base64" DisplayName="encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper a" CodeSystem="HL70299" Usage="P"/>
+<ValueElement Value="A" DisplayName="no encoding - data are displayable ASCII characters." CodeSystem="HL70299" Usage="P"/>
+<ValueElement Value="Hex" DisplayName="hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets." CodeSystem="HL70299" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70128" Name="Allergy severity" Description="Allergy severity" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="MO" DisplayName="Moderate" CodeSystem="HL70128" Usage="P"/>
+<ValueElement Value="MI" DisplayName="Mild" CodeSystem="HL70128" Usage="P"/>
+<ValueElement Value="SV" DisplayName="Severe" CodeSystem="HL70128" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL74000" Name="Name/address representation" Description="Name/address representation" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="I" DisplayName="Ideographic (i.e., Kanji)" CodeSystem="HL74000" Usage="P"/>
+<ValueElement Value="P" DisplayName="Phonetic (i.e., ASCII, Katakana, Hiragana, etc.)" CodeSystem="HL74000" Usage="P"/>
+<ValueElement Value="A" DisplayName="Alphabetic (i.e., Default or some single-byte)" CodeSystem="HL74000" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70001" Name="Sex" Description="Sex" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="O" DisplayName="Other" CodeSystem="HL70001" Usage="P"/>
+<ValueElement Value="F" DisplayName="Female" CodeSystem="HL70001" Usage="P"/>
+<ValueElement Value="M" DisplayName="Male" CodeSystem="HL70001" Usage="P"/>
+<ValueElement Value="U" DisplayName="Unknown" CodeSystem="HL70001" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70334" Name="Disabled person" Description="Disabled person" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="AP" DisplayName="Associated party" CodeSystem="HL70334" Usage="P"/>
+<ValueElement Value="GT" DisplayName="Guarantor" CodeSystem="HL70334" Usage="P"/>
+<ValueElement Value="IN" DisplayName="Insured" CodeSystem="HL70334" Usage="P"/>
+<ValueElement Value="PT" DisplayName="Patient" CodeSystem="HL70334" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70218" Name="Patient Charge Adjustment Code" Description="Patient Charge Adjustment Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70021" Name="Bad Debt Agency Code" Description="Bad Debt Agency Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70061" Name="Check digit scheme" Description="Check digit scheme" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="ISO" DisplayName="ISO 7064: 1983" CodeSystem="HL70061" Usage="P"/>
+<ValueElement Value="M11" DisplayName="Mod 11 algorithm" CodeSystem="HL70061" Usage="P"/>
+<ValueElement Value="M10" DisplayName="Mod 10 algorithm" CodeSystem="HL70061" Usage="P"/>
+<ValueElement Value="NPI" DisplayName="Check digit algorithm in the US National Provider Identifier" CodeSystem="HL70061" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70044" Name="Contract Code" Description="Contract Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70072" Name="Insurance Plan ID" Description="Insurance Plan ID" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70092" Name="Re-admission Indicator" Description="Re-admission Indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="R" DisplayName="Readmission" CodeSystem="HL70092" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70007" Name="Admission type" Description="Admission type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="A" DisplayName="Accident" CodeSystem="HL70007" Usage="P"/>
+<ValueElement Value="L" DisplayName="Labor and Delivery" CodeSystem="HL70007" Usage="P"/>
+<ValueElement Value="R" DisplayName="Routine" CodeSystem="HL70007" Usage="P"/>
+<ValueElement Value="E" DisplayName="Emergency" CodeSystem="HL70007" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70087" Name="Preadmit Test Indicator" Description="Preadmit Test Indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70064" Name="Financial Class" Description="Financial Class" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70142" Name="Military status" Description="Military status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="ACT" DisplayName="Active duty" CodeSystem="HL70142" Usage="P"/>
+<ValueElement Value="RET" DisplayName="Retired" CodeSystem="HL70142" Usage="P"/>
+<ValueElement Value="DEC" DisplayName="Deceased" CodeSystem="HL70142" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70004" Name="Patient class" Description="Patient class" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="I" DisplayName="Inpatient" CodeSystem="HL70004" Usage="P"/>
+<ValueElement Value="O" DisplayName="Outpatient" CodeSystem="HL70004" Usage="P"/>
+<ValueElement Value="P" DisplayName="Preadmit" CodeSystem="HL70004" Usage="P"/>
+<ValueElement Value="B" DisplayName="Obstetrics" CodeSystem="HL70004" Usage="P"/>
+<ValueElement Value="E" DisplayName="Emergency" CodeSystem="HL70004" Usage="P"/>
+<ValueElement Value="R" DisplayName="Recurring patient" CodeSystem="HL70004" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70117" Name="Account Status" Description="Account Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70140" Name="Military service" Description="Military service" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="USAF" DisplayName="U.S. Air Force" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="USN" DisplayName="U.S. Navy" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="USMC" DisplayName="U.S. Marines" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="USA" DisplayName="U.S. Army" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="NOAA" DisplayName="National Oceanic and Atmospheric Administration" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="USCG" DisplayName="U.S. Coast Guard" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="NATO" DisplayName="North Atlantic Treaty Organization" CodeSystem="HL70140" Usage="P"/>
+<ValueElement Value="USPHS" DisplayName="U.S. Public Health Service" CodeSystem="HL70140" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70130" Name="Visit User Code" Description="Visit User Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70002" Name="Marital status" Description="Marital status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="S" DisplayName="Single" CodeSystem="HL70002" Usage="P"/>
+<ValueElement Value="W" DisplayName="Widowed" CodeSystem="HL70002" Usage="P"/>
+<ValueElement Value="A" DisplayName="Separated" CodeSystem="HL70002" Usage="P"/>
+<ValueElement Value="M" DisplayName="Married" CodeSystem="HL70002" Usage="P"/>
+<ValueElement Value="D" DisplayName="Divorced" CodeSystem="HL70002" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70032" Name="Charge/Price Indicator" Description="Charge/Price Indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70009" Name="Ambulatory status" Description="Ambulatory status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="B1" DisplayName="Oxygen therapy" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="B2" DisplayName="Special equipment (tubes, IVs, catheters)" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="B6" DisplayName="Pregnant" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A0" DisplayName="No functional limitations" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A1" DisplayName="Ambulates with assistive device" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="B4" DisplayName="Mastectomy" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A3" DisplayName="Comatose; non-responsive" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A8" DisplayName="Non-English speaking" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A6" DisplayName="Hearing impaired" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A5" DisplayName="Vision impaired" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A7" DisplayName="Speech impaired" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A2" DisplayName="Wheelchair/stretcher bound" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="B5" DisplayName="Paraplegic" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A4" DisplayName="Disoriented" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="A9" DisplayName="Functional level unknown" CodeSystem="HL70009" Usage="P"/>
+<ValueElement Value="B3" DisplayName="Amputee" CodeSystem="HL70009" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70019" Name="Anesthesia Code" Description="Anesthesia Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70298" Name="CP range type" Description="CP range type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="F" DisplayName="Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed" CodeSystem="HL70298" Usage="P"/>
+<ValueElement Value="P" DisplayName="Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed" CodeSystem="HL70298" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70343" Name="Military Handicapped Program code" Description="Military Handicapped Program code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70042" Name="Company Plan Code" Description="Company Plan Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70327" Name="Job Code/Class" Description="Job Code/Class" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70055" Name="Diagnostic Related Group" Description="Diagnostic Related Group" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70333" Name="Driver’s license issuing authority" Description="Driver’s license issuing authority" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70088" Name="Procedure Code" Description="Procedure Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70229" Name="DRG payor" Description="DRG payor" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="C" DisplayName="Champus" CodeSystem="HL70229" Usage="P"/>
+<ValueElement Value="G" DisplayName="Managed Care Organization" CodeSystem="HL70229" Usage="P"/>
+<ValueElement Value="M" DisplayName="Medicare" CodeSystem="HL70229" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70303" Name="Room" Description="Room" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70153" Name="Value code" Description="Value code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="21" DisplayName="Catastrophic" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="22" DisplayName="Surplus" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="23" DisplayName="Recurring monthly incode" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="45" DisplayName="Accident hour" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="47" DisplayName="Any liability insurance" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="49" DisplayName="Hematocrit reading" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="50" DisplayName="Physical therapy visits" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="43" DisplayName="Disabled beneficiary under age 64 with LGHP" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="02" DisplayName="Hospital has no semi-private rooms" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="08" DisplayName="Medicare life time reserve amount in the first calendar year" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="A1" DisplayName="Deductible payer A" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="30" DisplayName="Pre-admission testing" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="80" DisplayName="Psychiatric visits" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="79" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="75" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="31" DisplayName="Patient liability amount" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="48" DisplayName="Hemoglobin reading" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="24" DisplayName="Medicaid rate code" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="A2" DisplayName="Coinsurance payer A" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="12" DisplayName="Working aged beneficiary/spouse with employer group health plan" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="17" DisplayName="Payer code" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="15" DisplayName="Worker’s Compensation" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="14" DisplayName="No Fault including auto/other" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="06" DisplayName="Medicare blood deductible" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="77" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="81" DisplayName="Visits subject to co-payment" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="46" DisplayName="Number of grace days" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="44" DisplayName="Amount provider agreed to accept from primary payer when this amount is less than charges but higher than payment received,, then a Medicare secondary payment is due" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="72" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="16" DisplayName="PHS, or other federal agency" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="70" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="52" DisplayName="Speech therapy visits" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="37" DisplayName="Pints of blood furnished" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="40" DisplayName="New coverage not implemented by HMO (for inpatient service only)" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="71" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="04" DisplayName="Inpatient professional component charges which are combined billed" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="11" DisplayName="Co-insurance amount in the second calendar year" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="67" DisplayName="Peritoneal dialysis" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="51" DisplayName="Occupational therapy visits" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="57" DisplayName="Home health aide - home visit hours" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="76" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="59" DisplayName="Oxygen saturation" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="58" DisplayName="Arterial blood gas" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="42" DisplayName="VA" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="70 ... 72" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="01" DisplayName="Most common semi-private rate" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="13" DisplayName="ESRD beneficiary in a Medicare coordination period with an employer group health plan" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="60" DisplayName="HHA branch MSA" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="A3" DisplayName="Estimated responsibility payer A" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="75 ... 79" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="78" DisplayName="Payer codes" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="10" DisplayName="Lifetime reserve amount in the second calendar year" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="05" DisplayName="Professional component included in charges and also billed separate to carrier" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="39" DisplayName="Pints of blood replaced" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="56" DisplayName="Skilled nurse - home visit hours" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="68" DisplayName="EPO-drug" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="38" DisplayName="Blood deductible pints" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="09" DisplayName="Medicare co-insurance amount in the first calendar year" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="41" DisplayName="Black lung" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="X0" DisplayName="Service excluded on primary policy" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="X4" DisplayName="Supplemental coverage" CodeSystem="HL70153" Usage="P"/>
+<ValueElement Value="53" DisplayName="Cardiac rehab visits" CodeSystem="HL70153" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70304" Name="Bed" Description="Bed" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70291" Name="Subtype of referenced data" Description="Subtype of referenced data" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="FAX" DisplayName="Facsimile data" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="RTF" DisplayName="Rich Text Format" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="SGML" DisplayName="Structured General Markup Language (HL7 V2.3.1 and later)" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="PostScript" DisplayName="PostScript program" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="TIFF" DisplayName="TIFF image data" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="JOT" DisplayName="Electronic ink data (Jot 1.0 standard)" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="PICT" DisplayName="PICT format image data" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="XML" DisplayName="Extensible Markup Language (HL7 V2.3.1 and later)" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="BASIC" DisplayName="ISDN PCM audio data" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="JPEG" DisplayName="Joint Photographic Experts Group" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="HTML" DisplayName="Hypertext Markup Language" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="DICOM" DisplayName="Digital Imaging and Communications in Medicine" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="Octet-stream" DisplayName="Uninterpreted binary data" CodeSystem="HL70291" Usage="P"/>
+<ValueElement Value="GIF" DisplayName="Graphics Interchange Format" CodeSystem="HL70291" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70193" Name="Amount class" Description="Amount class" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="LM" DisplayName="Limit" CodeSystem="HL70193" Usage="P"/>
+<ValueElement Value="AT" DisplayName="Amount" CodeSystem="HL70193" Usage="P"/>
+<ValueElement Value="UL" DisplayName="Unlimited" CodeSystem="HL70193" Usage="P"/>
+<ValueElement Value="PC" DisplayName="Percentage" CodeSystem="HL70193" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70356" Name="Alternate character set handling scheme" Description="Alternate character set handling scheme" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="ISO 2022-1994" DisplayName="This standard is titled "Information Technology - Character Code Structure and Extension Technique". This standard specifies an escape sequence from basic one byte character set to specified other character set, and vice versa. The escape sequence expl" CodeSystem="HL70356" Usage="P"/>
+<ValueElement Value="2.3" DisplayName="The character set switching mode specified in HL7 2.3, sections 2.8.28.6.1, and 2.9.2. Note that the escape sequences used in this mode are "HL7 escapes sequences" as defined in HL7 2.3, sec. 2.9, and do not use the ASCII "esc" character," CodeSystem="HL70356" Usage="P"/>
+<ValueElement Value="<null>" DisplayName="This is the default, indicating that there is no character set switching occurring in this message." CodeSystem="HL70356" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70216" Name="Patient Status Code" Description="Patient Status Code" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70078" Name="Abnormal flags" Description="Abnormal flags" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="B" DisplayName="Better--use when direction not relevant" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="W" DisplayName="Worse--use when direction not relevant" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="<" DisplayName="Below absolute low-off instrument scale" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="S" DisplayName="Susceptible*" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="D" DisplayName="Significant change down" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="VS" DisplayName="Very susceptible*" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="H" DisplayName="Above high normal" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="LL" DisplayName="Below lower panic limits" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="N" DisplayName="Normal (applies to non-numeric results)" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="I" DisplayName="Intermediate*" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="MS" DisplayName="Moderately susceptible*" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="L" DisplayName="Below low normal" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value=">" DisplayName="Above absolute high-off instrument scale" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="A" DisplayName="Abnormal (applies to non-numeric results)" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="R" DisplayName="Resistant*" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="U" DisplayName="Significant change up" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="HH" DisplayName="Above upper panic limits" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="AA" DisplayName="Very abnormal (applies to non-numeric units, analogous to panic limits for numeric units)" CodeSystem="HL70078" Usage="P"/>
+<ValueElement Value="null" DisplayName="No range defined, or normal ranges don't apply" CodeSystem="HL70078" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70066" Name="Employment Status" Description="Employment Status" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70326" Name="Visit indicator" Description="Visit indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="V" DisplayName="Visit level" CodeSystem="HL70326" Usage="P"/>
+<ValueElement Value="A" DisplayName="Account level" CodeSystem="HL70326" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70344" Name="Patient’s relationship to insured" Description="Patient’s relationship to insured" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="01" DisplayName="Patient is insured" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="15" DisplayName="Injured plaintiff" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="05" DisplayName="Step child" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="18" DisplayName="Parent" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="06" DisplayName="Foster child" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="16" DisplayName="Sponsored dependent" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="13" DisplayName="Grandchild" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="04" DisplayName="Natural child/Insured does not have financial responsibility" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="09" DisplayName="Unknown" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="14" DisplayName="Niece/nephew" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="11" DisplayName="Organ donor" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="02" DisplayName="Spouse" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="08" DisplayName="Employee" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="10" DisplayName="Handicapped dependent" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="12" DisplayName="Cadaver donor" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="07" DisplayName="Ward of the court" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="19" DisplayName="Grandparent" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="17" DisplayName="Minor dependent of a minor dependent" CodeSystem="HL70344" Usage="P"/>
+<ValueElement Value="03" DisplayName="Natural child/insured financial responsibility" CodeSystem="HL70344" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70118" Name="Major Diagnostic Category" Description="Major Diagnostic Category" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70211" Name="Alternate character sets" Description="Alternate character sets" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="8859/7" DisplayName="The printable characters from the ISO 8859/7 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/4" DisplayName="The printable characters from the ISO 8859/4 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/1" DisplayName="The printable characters from the ISO 8859/1 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/3" DisplayName="The printable characters from the ISO 8859/3 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/8" DisplayName="The printable characters from the ISO 8859/8 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="ISO IR159" DisplayName="Code of the supplementary Japanese Graphic Character set for information interchange (JIS X 0212-1990), Note that the code contains a space, i.e. "ISO IR159"." CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="ISO IR87" DisplayName="Code for the Japanese Graphic Character set for information interchange (JIS X 0208-1990), Note that the code contains a space, i.e. "ISO IR87"." CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/5" DisplayName="The printable characters from the ISO 8859/5 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="UNICODE" DisplayName="The world wide character standard from ISO/IEC 10646-1-1993" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/6" DisplayName="The printable characters from the ISO 8859/6 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/2" DisplayName="The printable characters from the ISO 8859/2 Character set" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="ISO IR14" DisplayName="Code for Information Exchange (one byte)(JIS X 0201-1976), Note that the code contains a space, i.e. "ISO IR14"." CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="ASCII" DisplayName="The printable 7-bit ASCII character set . (This is the default if this field is omitted)" CodeSystem="HL70211" Usage="P"/>
+<ValueElement Value="8859/9" DisplayName="The printable characters from the ISO 8859/9 Character set" CodeSystem="HL70211" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70136" Name="Yes/no indicator" Description="Yes/no indicator" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="Y" DisplayName="Yes" CodeSystem="HL70136" Usage="P"/>
+<ValueElement Value="N" DisplayName="No" CodeSystem="HL70136" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70228" Name="Diagnosis classification" Description="Diagnosis classification" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="R" DisplayName="Radiological scheduling (not using ICDA codes)" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="T" DisplayName="Tissue diagnosis" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="D" DisplayName="Diagnosis" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="M" DisplayName="Medication (antibiotic)" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="C" DisplayName="Consultation" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="S" DisplayName="Sign and symptom" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="I" DisplayName="Invasive procedure not classified elsewhere (I.V., catheter, etc.)" CodeSystem="HL70228" Usage="P"/>
+<ValueElement Value="O" DisplayName="Other" CodeSystem="HL70228" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70141" Name="Military rank/grade" Description="Military rank/grade" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="W1 ... W4" DisplayName="Warrant Officers" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O7" DisplayName="Officers 7" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="W2" DisplayName="Warrant Officers 2" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O9" DisplayName="Officers 9" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E9" DisplayName="Enlisted 9" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="W3" DisplayName="Warrant Officers 3" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O8" DisplayName="Officers 8" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O6" DisplayName="Officers 6" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O5" DisplayName="Officers 5" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E8" DisplayName="Enlisted 8" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O1" DisplayName="Officers 1" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O3" DisplayName="Officers 3" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E2" DisplayName="Enlisted 2" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E4" DisplayName="Enlisted 4" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O4" DisplayName="Officers 4" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E7" DisplayName="Enlisted 7" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="W1" DisplayName="Warrant Officers 1" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O10" DisplayName="Officers 10" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E3" DisplayName="Enlisted 3" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E6" DisplayName="Enlisted 6" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O1 ... O10" DisplayName="Officers" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E5" DisplayName="Enlisted 5" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E1 ... E9" DisplayName="Enlisted" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="W4" DisplayName="Warrant Officers 4" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="O2" DisplayName="Officers 2" CodeSystem="HL70141" Usage="P"/>
+<ValueElement Value="E1" DisplayName="Enlisted 1" CodeSystem="HL70141" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70152" Name="Second Opinion Documentation Received" Description="Second Opinion Documentation Received" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70089" Name="Procedure Coding Method" Description="Procedure Coding Method" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70297" Name="CN ID source" Description="CN ID source" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70205" Name="Price type" Description="Price type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="TF" DisplayName="technology fee for use of equipment" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="PF" DisplayName="professional fee for performing provider" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="AP" DisplayName="administrative price or handling fee" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="UP" DisplayName="unit price, may be based on length of procedure or service" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="DC" DisplayName="direct unit cost" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="TP" DisplayName="total price" CodeSystem="HL70205" Usage="P"/>
+<ValueElement Value="IC" DisplayName="indirect unit cost" CodeSystem="HL70205" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70360" Name="Degree" Description="Degree" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="BN" DisplayName="Bachelor of Nursing" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MT" DisplayName="Master of Theology" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="NG" DisplayName="Non-Graduate" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="DED" DisplayName="Doctor of Education" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MA" DisplayName="Master of Arts" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MSL" DisplayName="Master of Science – Law" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="AA" DisplayName="Associate of Arts" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="PHS" DisplayName="Doctor of Science" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MBA" DisplayName="Master of Business Administration" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BT" DisplayName="Bachelor of Theology" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="DO" DisplayName="Doctor of Osteopathy" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="ME" DisplayName="Master of Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BE" DisplayName="Bachelor or Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="TS" DisplayName="Trade School Graduate" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="SEC" DisplayName="Secretarial Certificate" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="PHD" DisplayName="Doctor of Philosophy" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MEE" DisplayName="Master of Electrical Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="PHE" DisplayName="Doctor of Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BFA" DisplayName="Bachelor of Fine Arts" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="AAS" DisplayName="Associate of Applied Science" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="CER" DisplayName="Certificate" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="DBA" DisplayName="Doctor of Business Administration" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MS" DisplayName="Master of Science" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="DIP" DisplayName="Diploma" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MFA" DisplayName="Master of Fine Arts" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BBA" DisplayName="Bachelor of Business Administration" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BSL" DisplayName="Bachelor of Science – Law" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MDI" DisplayName="Master of Divinity" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="AE" DisplayName="Associate of Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BS" DisplayName="Bachelor of Science" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="ABA" DisplayName="Associate of Business Administration" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MD" DisplayName="Doctor of Medicine" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="HS" DisplayName="High School Graduate" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MCE" DisplayName="Master of Civil Engineering" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="JD" DisplayName="Juris Doctor" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="BA" DisplayName="Bachelor of Arts" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="AS" DisplayName="Associate of Science" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MED" DisplayName="Master of Education" CodeSystem="HL70360" Usage="P"/>
+<ValueElement Value="MME" DisplayName="Master of Mechanical Engineering" CodeSystem="HL70360" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70315" Name="Living will" Description="Living will" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="U" DisplayName="Unknown" CodeSystem="HL70315" Usage="P"/>
+<ValueElement Value="I" DisplayName="No, patient does not have a living will but information was provided" CodeSystem="HL70315" Usage="P"/>
+<ValueElement Value="F" DisplayName="Yes, patient has a living will but it is not on file" CodeSystem="HL70315" Usage="P"/>
+<ValueElement Value="Y" DisplayName="Yes, patient has a living will" CodeSystem="HL70315" Usage="P"/>
+<ValueElement Value="N" DisplayName="No, patient does not have a living will and no information was provided" CodeSystem="HL70315" Usage="P"/>
+</ValueSetDefinition>
+<ValueSetDefinition BindingIdentifier="HL70222" Name="Contact Reason" Description="Contact Reason" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed"/>
+<ValueSetDefinition BindingIdentifier="HL70147" Name="Policy type" Description="Policy type" Version="2.3.1" ContentDefinition="Extensional" Stability="Static" Extensibility="Closed">
+<ValueElement Value="3MMD" DisplayName="Third major medical" CodeSystem="HL70147" Usage="P"/>
+<ValueElement Value="2MMD" DisplayName="Second major medical" CodeSystem="HL70147" Usage="P"/>
+<ValueElement Value="2ANC" DisplayName="Second ancillary" CodeSystem="HL70147" Usage="P"/>
+<ValueElement Value="ANC" DisplayName="Ancillary" CodeSystem="HL70147" Usage="P"/>
+<ValueElement Value="MMD" DisplayName="Major medical" CodeSystem="HL70147" Usage="P"/>
+</ValueSetDefinition>
+</ValueSetDefinitions>
+</ValueSetLibrary>
