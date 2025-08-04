@@ -1,0 +1,903 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<ConformanceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.1/src/main/resources/hl7-v2-schemas/Profile.xsd" ID="bbd9b0bc-b794-4722-8b15-79551ab60b5c">
+<MetaData Name="ADT" OrgName="No Org Info" Version="null" Date="No Date Info" SpecificationName="No Version Info"/>
+<Messages>
+<Message ID="688ffea83b2b660008deac38" Name="A01" Type="ADT" Event="A01" StructID="ADT_A01" Description="ADT/ACK - Admit / visit notification">
+<Segment Ref="MSH" Usage="R" Min="1" Max="1"/>
+<Segment Ref="EVN" Usage="R" Min="1" Max="1"/>
+<Segment Ref="PID" Usage="R" Min="1" Max="1"/>
+<Segment Ref="PD1" Usage="O" Min="0" Max="1"/>
+<Segment Ref="NK1" Usage="O" Min="0" Max="*"/>
+<Segment Ref="PV1" Usage="R" Min="1" Max="1"/>
+<Segment Ref="PV2" Usage="O" Min="0" Max="1"/>
+<Segment Ref="DB1" Usage="O" Min="0" Max="*"/>
+<Segment Ref="OBX" Usage="O" Min="0" Max="*"/>
+<Segment Ref="AL1" Usage="O" Min="0" Max="*"/>
+<Segment Ref="DG1" Usage="O" Min="0" Max="*"/>
+<Segment Ref="DRG" Usage="O" Min="0" Max="1"/>
+<Group ID="688ffea83b2b660008deac38-13" Name="PROCEDURE" Usage="O" Min="0" Max="*">
+<Segment Ref="PR1" Usage="R" Min="1" Max="1"/>
+<Segment Ref="ROL" Usage="O" Min="0" Max="*"/>
+</Group>
+<Segment Ref="GT1" Usage="O" Min="0" Max="*"/>
+<Group ID="688ffea83b2b660008deac38-15" Name="INSURANCE" Usage="O" Min="0" Max="*">
+<Segment Ref="IN1" Usage="R" Min="1" Max="1"/>
+<Segment Ref="IN2" Usage="O" Min="0" Max="1"/>
+<Segment Ref="IN3" Usage="O" Min="0" Max="*"/>
+</Group>
+<Segment Ref="ACC" Usage="O" Min="0" Max="1"/>
+<Segment Ref="UB1" Usage="O" Min="0" Max="1"/>
+<Segment Ref="UB2" Usage="O" Min="0" Max="1"/>
+</Message>
+</Messages>
+<Segments>
+<Segment Label="DG1" ID="DG1" Name="DG1" Version="2.3.1" Description="DG1 - diagnosis segment">
+<Field Name="Set ID - DG1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Diagnosis Coding Method" Usage="B" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Diagnosis Code - DG1" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Diagnosis Description" Usage="B" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="40" Min="0" Max="1"/>
+<Field Name="Diagnosis Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Diagnosis Type" Usage="R" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="1" Max="1"/>
+<Field Name="Major Diagnostic Category" Usage="B" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Diagnostic Related Group" Usage="B" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="DRG Approval Indicator" Usage="B" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="DRG Grouper Review Code" Usage="B" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Outlier Type" Usage="B" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Outlier Days" Usage="B" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Outlier Cost" Usage="B" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Grouper Version And Type" Usage="B" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Diagnosis Priority" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Diagnosing Clinician" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Diagnosis Classification" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Confidential Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Attestation Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+</Segment>
+<Segment Label="IN1" ID="IN1" Name="IN1" Version="2.3.1" Description="IN1 - insurance segment">
+<Field Name="Set ID - IN1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Insurance Plan ID" Usage="R" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Insurance Company ID" Usage="R" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="*"/>
+<Field Name="Insurance Company Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insurance Company Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insurance Co Contact Person" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insurance Co Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Group Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Group Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Group Emp ID" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Group Emp Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Plan Effective Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Plan Expiration Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Authorization Information" Usage="O" Datatype="AUI" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Plan Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Name Of Insured" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Relationship To Patient" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Insured’s Date Of Birth" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Insured’s Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Assignment Of Benefits" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Coordination Of Benefits" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Coord Of Ben. Priority" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Notice Of Admission Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Notice Of Admission Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Report Of Eligibility Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Report Of Eligibility Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Release Information Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Pre-Admit Cert (PAC)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="1"/>
+<Field Name="Verification Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Verification By" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Type Of Agreement Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Billing Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Lifetime Reserve Days" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Delay Before L.R. Day" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Company Plan Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Policy Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="1"/>
+<Field Name="Policy Deductible" Usage="O" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Policy Limit - Amount" Usage="B" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Policy Limit - Days" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Room Rate - Semi-Private" Usage="B" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Room Rate - Private" Usage="B" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Insured’s Employment Status" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Insured’s Sex" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Insured’s Employer’s Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Verification Status" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Prior Insurance Plan ID" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Coverage Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Handicap" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Insured’s ID Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+<Segment Label="PR1" ID="PR1" Name="PR1" Version="2.3.1" Description="PR1 - procedures segment">
+<Field Name="Set ID - PR1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Procedure Coding Method" Usage="B" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Procedure Code" Usage="R" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Procedure Description" Usage="B" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="40" Min="0" Max="1"/>
+<Field Name="Procedure Date/Time" Usage="R" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Procedure Functional Type" Usage="R" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="1" Max="1"/>
+<Field Name="Procedure Minutes" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Anesthesiologist" Usage="B" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Anesthesia Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Anesthesia Minutes" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Surgeon" Usage="B" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Procedure Practitioner" Usage="B" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Consent Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Procedure Priority" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Associated Diagnosis Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Procedure Code Modifier" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+<Segment Label="IN2" ID="IN2" Name="IN2" Version="2.3.1" Description="IN2 - insurance additional information segment">
+<Field Name="Insured’s Employee ID" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Social Security Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="11" Min="0" Max="1"/>
+<Field Name="Insured’s Employer’s Name and ID" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Employer Information Data" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Mail Claim Party" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="*"/>
+<Field Name="Medicare Health Ins Card Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="1"/>
+<Field Name="Medicaid Case Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Medicaid Case Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="1"/>
+<Field Name="Military Sponsor Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Military ID Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+<Field Name="Dependent Of Military Recipient" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Military Organization" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="25" Min="0" Max="1"/>
+<Field Name="Military Station" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="25" Min="0" Max="1"/>
+<Field Name="Military Service" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="14" Min="0" Max="1"/>
+<Field Name="Military Rank/Grade" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Military Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Military Retire Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Military Non-Avail Cert On File" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Baby Coverage" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Combine Baby Bill" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Blood Deductible" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Special Coverage Approval Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Special Coverage Approval Title" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="30" Min="0" Max="1"/>
+<Field Name="Non-Covered Insurance Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="*"/>
+<Field Name="Payor ID" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Payor Subscriber ID" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Eligibility Source" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Room Coverage Type/Amount" Usage="O" Datatype="RMC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Policy Type/Amount" Usage="O" Datatype="PTA" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Daily Deductible" Usage="O" Datatype="DDI" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Living Dependency" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Ambulatory Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Citizenship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Primary Language" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Living Arrangement" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Publicity Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Protection Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Student Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Religion" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Mother’s Maiden Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Nationality" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Ethnic Group" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Marital Status" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Employment Start Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Employment Stop Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Job Title" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+<Field Name="Job Code/Class" Usage="O" Datatype="JCC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Job Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Employer Contact Person Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Employer Contact Person Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Employer Contact Reason" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Insured’s Contact Person’s Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Contact Person Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Contact Person Reason" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Relationship To The Patient Start Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Relationship To The Patient Stop Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="*"/>
+<Field Name="Insurance Co. Contact Reason" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Insurance Co Contact Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Policy Scope" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Policy Source" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Patient Member Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor’s Relationship To Insured" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Insured’s Phone Number - Home" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured’s Employer Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Military Handicapped Program" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Suspend Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Copay Limit Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Stoploss Limit Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Insured Organization Name And ID" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Insured Employer Organization Name And ID" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Race" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="HCFA Patient’s Relationship to Insured" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+</Segment>
+<Segment Label="UB2" ID="UB2" Name="UB2" Version="2.3.1" Description="UB2 - UB92 data segment">
+<Field Name="Set ID - UB2" Usage="O" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Co-Insurance Days (9)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Condition Code (24-30)" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="7"/>
+<Field Name="Covered Days (7)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Non-Covered Days (8)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Value Amount & Code" Usage="O" Datatype="UVC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="12"/>
+<Field Name="Occurrence Code & Date (32-35)" Usage="O" Datatype="OCD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="8"/>
+<Field Name="Occurrence Span Code/Dates (36)" Usage="O" Datatype="OSP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="2"/>
+<Field Name="UB92 Locator 2 (State)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="29" Min="0" Max="2"/>
+<Field Name="UB92 Locator 11 (State)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="2"/>
+<Field Name="UB92 Locator 31 (National)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="5" Min="0" Max="1"/>
+<Field Name="Document Control Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="23" Min="0" Max="3"/>
+<Field Name="UB92 Locator 49 (National)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="23"/>
+<Field Name="UB92 Locator 56 (State)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="14" Min="0" Max="5"/>
+<Field Name="UB92 Locator 57 (National)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="27" Min="0" Max="1"/>
+<Field Name="UB92 Locator 78 (State)" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="2"/>
+<Field Name="Special Visit Count" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+</Segment>
+<Segment Label="PV1" ID="PV1" Name="PV1" Version="2.3.1" Description="PV1 - patient visit segment-">
+<Field Name="Set ID - PV1" Usage="O" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Patient Class" Usage="R" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="1" Max="1"/>
+<Field Name="Assigned Patient Location" Usage="O" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Admission Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Preadmit Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Prior Patient Location" Usage="O" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Attending Doctor" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Referring Doctor" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Consulting Doctor" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Hospital Service" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Temporary Location" Usage="O" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Preadmit Test Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Re-admission Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Admit Source" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Ambulatory Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="VIP Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Admitting Doctor" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Patient Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Visit Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Financial Class" Usage="O" Datatype="FC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Charge Price Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Courtesy Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Credit Rating" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Contract Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Contract Effective Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="*"/>
+<Field Name="Contract Amount" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="*"/>
+<Field Name="Contract Period" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="*"/>
+<Field Name="Interest Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Transfer to Bad Debt Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Transfer to Bad Debt Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Bad Debt Agency Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="10" Min="0" Max="1"/>
+<Field Name="Bad Debt Transfer Amount" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Bad Debt Recovery Amount" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Delete Account Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Delete Account Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Discharge Disposition" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Discharged to Location" Usage="O" Datatype="DLD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Diet Type" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Servicing Facility" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Bed Status" Usage="B" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Account Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Pending Location" Usage="O" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Prior Temporary Location" Usage="O" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Admit Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Discharge Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Current Patient Balance" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Total Charges" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Total Adjustments" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Total Payments" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+<Field Name="Alternate Visit ID" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Visit Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Other Healthcare Provider" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+<Segment Label="DRG" ID="DRG" Name="DRG" Version="2.3.1" Description="DRG - diagnosis related group segment">
+<Field Name="Diagnostic Related Group" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="DRG Assigned Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="DRG Approval Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="DRG Grouper Review Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Outlier Type" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Outlier Days" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Outlier Cost" Usage="O" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="DRG Payor" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Outlier Reimbursement" Usage="O" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Confidential Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+</Segment>
+<Segment Label="NK1" ID="NK1" Name="NK1" Version="2.3.1" Description="NK1 - next of kin / associated parties segment-">
+<Field Name="Set ID - NK1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Relationship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Business Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Role" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Start Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="End Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Next of Kin / Associated Parties Job Title" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="60" Min="0" Max="1"/>
+<Field Name="Next of Kin / Associated Parties Job Code/Class" Usage="O" Datatype="JCC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Next of Kin / Associated Parties Employee Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Organization Name - NK1" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Marital Status" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Sex" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Date/Time Of Birth" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Living Dependency" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Ambulatory Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Citizenship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Primary Language" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Living Arrangement" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Publicity Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Protection Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Student Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Religion" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Mother’s Maiden Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Nationality" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Ethnic Group" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Person’s Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Person’s Telephone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Person’s Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Next of Kin/Associated Party’s Identifiers" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Job Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Race" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Handicap" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Contact Person Social Security Number" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="16" Min="0" Max="1"/>
+</Segment>
+<Segment Label="PV2" ID="PV2" Name="PV2" Version="2.3.1" Description="PV2 - patient visit - additional information segment">
+<Field Name="Prior Pending Location" Usage="C" Datatype="PL" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Accommodation Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Admit Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Transfer Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Patient Valuables" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="25" Min="0" Max="*"/>
+<Field Name="Patient Valuables Location" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="25" Min="0" Max="1"/>
+<Field Name="Visit User Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Expected Admit Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Expected Discharge Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Estimated Length of Inpatient Stay" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Actual Length of Inpatient Stay" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Visit Description" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="50" Min="0" Max="1"/>
+<Field Name="Referral Source Code" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Previous Service Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Employment Illness Related Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Purge Status Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Purge Status Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Special Program Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Retention Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Expected Number of Insurance Plans" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Visit Publicity Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Visit Protection Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Clinic Organization Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Patient Status Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Visit Priority Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Previous Treatment Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Expected Discharge Disposition" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Signature on File Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="First Similar Illness Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Patient Charge Adjustment Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Recurring Service Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Billing Media Code" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Expected Surgery Date & Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Military Partnership Code" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Military Non-Availability Code" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Newborn Baby Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Baby Detained Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+</Segment>
+<Segment Label="IN3" ID="IN3" Name="IN3" Version="2.3.1" Description="IN3 - insurance additional information, certification segment">
+<Field Name="Set ID - IN3" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Certification Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Certified By" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Certification Required" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Penalty" Usage="O" Datatype="MOP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Certification Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Certification Modify Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Operator" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Certification Begin Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Certification End Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Days" Usage="O" Datatype="DTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Non-Concur Code/Description" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Non-Concur Effective Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Physician Reviewer" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Certification Contact" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="48" Min="0" Max="1"/>
+<Field Name="Certification Contact Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Appeal Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Certification Agency" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Certification Agency Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Pre-Certification Req/Window" Usage="O" Datatype="PCF" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Case Manager" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="48" Min="0" Max="1"/>
+<Field Name="Second Opinion Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Second Opinion Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Second Opinion Documentation Received" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="*"/>
+<Field Name="Second Opinion Physician" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+<Segment Label="PD1" ID="PD1" Name="PD1" Version="2.3.1" Description="PD1 - patient additional demographic segment">
+<Field Name="Living Dependency" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Living Arrangement" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Patient Primary Facility" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Patient Primary Care Provider Name & ID No." Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Student Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Handicap" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Living Will" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Organ Donor" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Separate Bill" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Duplicate Patient" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Publicity Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Protection Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+</Segment>
+<Segment Label="DB1" ID="DB1" Name="DB1" Version="2.3.1" Description="DB1 - Disability segment">
+<Field Name="Set ID - DB1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Disabled Person Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Disabled Person Identifier" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Disabled Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Disability Start Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Disability End Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Disability Return to Work Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Disability Unable to Work Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+</Segment>
+<Segment Label="EVN" ID="EVN" Name="EVN" Version="2.3.1" Description="EVN - event type segment">
+<Field Name="Event Type Code" Usage="B" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Recorded Date/Time" Usage="R" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Date/Time Planned Event" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Event Reason Code" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Operator ID" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Event Occurred" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+</Segment>
+<Segment Label="MSH" ID="MSH" Name="MSH" Version="2.3.1" Description="MSH - message header segment">
+<Field Name="Field Separator" Usage="R" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="1" Min="1" Max="1"/>
+<Field Name="Encoding Characters" Usage="R" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Sending Application" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Sending Facility" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Receiving Application" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Receiving Facility" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Date/Time Of Message" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Security" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="40" Min="0" Max="1"/>
+<Field Name="Message Type" Usage="R" Datatype="MSG" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Message Control ID" Usage="R" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="1" Max="1"/>
+<Field Name="Processing ID" Usage="R" Datatype="PT" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Version ID" Usage="R" Datatype="VID" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Sequence Number" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="1"/>
+<Field Name="Continuation Pointer" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="180" Min="0" Max="1"/>
+<Field Name="Accept Acknowledgment Type" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Application Acknowledgment Type" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Country Code" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Character Set" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="16" Min="0" Max="*"/>
+<Field Name="Principal Language Of Message" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Alternate Character Set Handling Scheme" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+</Segment>
+<Segment Label="ACC" ID="ACC" Name="ACC" Version="2.3.1" Description="ACC - accident segment">
+<Field Name="Accident Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Accident Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Accident Location" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="25" Min="0" Max="1"/>
+<Field Name="Auto Accident State" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Accident Job Related Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Accident Death Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="12" Min="0" Max="1"/>
+</Segment>
+<Segment Label="ROL" ID="ROL" Name="ROL" Version="2.3.1" Description="Role">
+<Field Name="Role Instance ID" Usage="R" Datatype="EI" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Action Code" Usage="R" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="1" Max="1"/>
+<Field Name="Role-ROL" Usage="R" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Role Person" Usage="R" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="*"/>
+<Field Name="Role Begin Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Role End Date/Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Role Duration" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Role Action Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+</Segment>
+<Segment Label="PID" ID="PID" Name="PID" Version="2.3.1" Description="PID - patient identification segment">
+<Field Name="Set ID - PID" Usage="O" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Patient ID" Usage="B" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Patient Identifier List" Usage="R" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="*"/>
+<Field Name="Alternate Patient ID - PID" Usage="B" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Patient Name" Usage="R" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="*"/>
+<Field Name="Mother’s Maiden Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Date/Time Of Birth" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Sex" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Patient Alias" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Race" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Patient Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="County Code" Usage="B" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Phone Number - Home" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Phone Number - Business" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Primary Language" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Marital Status" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Religion" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Patient Account Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="SSN Number - Patient" Usage="B" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="16" Min="0" Max="1"/>
+<Field Name="Driver's License Number - Patient" Usage="O" Datatype="DLN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Mother's Identifier" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Ethnic Group" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Birth Place" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="60" Min="0" Max="1"/>
+<Field Name="Multiple Birth Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Birth Order" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Citizenship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Veterans Military Status" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Nationality" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Patient Death Date and Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Patient Death Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+</Segment>
+<Segment Label="UB1" ID="UB1" Name="UB1" Version="2.3.1" Description="UB1 - UB82 data segment">
+<Field Name="Set ID - UB1" Usage="O" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Blood Deductible (43)" Usage="B" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Blood Furnished-Pints Of (40)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Blood Replaced-Pints (41)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Blood Not Replaced-Pints(42)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Co-Insurance Days (25)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Condition Code (35-39)" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="14" Min="0" Max="5"/>
+<Field Name="Covered Days - (23)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Non Covered Days - (24)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Value Amount & Code (46-49)" Usage="O" Datatype="UVC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="8"/>
+<Field Name="Number Of Grace Days (90)" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Special Program Indicator (44)" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="PSRO/UR Approval Indicator (87)" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="PSRO/UR Approved Stay-Fm (88)" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="PSRO/UR Approved Stay-To (89)" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Occurrence (28-32)" Usage="O" Datatype="OCD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="5"/>
+<Field Name="Occurrence Span (33)" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Occur Span Start Date(33)" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Occur Span End Date (33)" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="UB-82 Locator 2" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="30" Min="0" Max="1"/>
+<Field Name="UB-82 Locator 9" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="7" Min="0" Max="1"/>
+<Field Name="UB-82 Locator 27" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="UB-82 Locator 45" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="17" Min="0" Max="1"/>
+</Segment>
+<Segment Label="GT1" ID="GT1" Name="GT1" Version="2.3.1" Description="GT1 - guarantor segment">
+<Field Name="Set ID - GT1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Guarantor Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Name" Usage="R" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="*"/>
+<Field Name="Guarantor Spouse Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Ph Num-Home" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Ph Num-Business" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Date/Time Of Birth" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Sex" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Guarantor Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Guarantor Relationship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor SSN" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="11" Min="0" Max="1"/>
+<Field Name="Guarantor Date - Begin" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Guarantor Date - End" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Guarantor Priority" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Guarantor Employer Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Employer Address" Usage="O" Datatype="XAD" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Employer Phone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Employee ID Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Employment Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Guarantor Organization Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Billing Hold Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Guarantor Credit Rating Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Death Date And Time" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Death Flag" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Guarantor Charge Adjustment Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Household Annual Income" Usage="O" Datatype="CP" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Household Size" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Guarantor Employer ID Number" Usage="O" Datatype="CX" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Guarantor Marital Status Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Hire Effective Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Employment Stop Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+<Field Name="Living Dependency" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Ambulatory Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="*"/>
+<Field Name="Citizenship" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Primary Language" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Living Arrangement" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Publicity Code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Protection Indicator" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="0" Max="1"/>
+<Field Name="Student Indicator" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Religion" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Mother’s Maiden Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Nationality" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Ethnic Group" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Person’s Name" Usage="O" Datatype="XPN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Person’s Telephone Number" Usage="O" Datatype="XTN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Contact Reason" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Contact Relationship" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Job Title" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+<Field Name="Job Code/Class" Usage="O" Datatype="JCC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Employer’s Organization Name" Usage="O" Datatype="XON" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Handicap" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Job Status" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Guarantor Financial Class" Usage="O" Datatype="FC" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Guarantor Race" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+<Segment Label="AL1" ID="AL1" Name="AL1" Version="2.3.1" Description="AL1 - patient allergy information segment">
+<Field Name="Set ID - AL1" Usage="R" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="1" Max="1"/>
+<Field Name="Allergy Type" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Allergy Code/Mnemonic/Description" Usage="R" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Allergy Severity" Usage="O" Datatype="IS" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Allergy Reaction" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="15" Min="0" Max="*"/>
+<Field Name="Identification Date" Usage="O" Datatype="DT" ConfLength="NA" MinLength="1" MaxLength="8" Min="0" Max="1"/>
+</Segment>
+<Segment Label="OBX" ID="OBX" Name="OBX" Version="2.3.1" Description="OBX - observation/result segment">
+<DynamicMapping>
+<Mapping Position="5" Reference="2" SecondReference="3.1">
+<Case Value="XCN" Datatype="XCN"/>
+<Case Value="CE" Datatype="CE"/>
+<Case Value="ED" Datatype="ED"/>
+<Case Value="SN" Datatype="SN"/>
+<Case Value="XAD" Datatype="XAD"/>
+<Case Value="PN" Datatype="PN"/>
+<Case Value="XTN" Datatype="XTN"/>
+<Case Value="MO" Datatype="MO"/>
+<Case Value="CN" Datatype="CN"/>
+<Case Value="TX" Datatype="TX"/>
+<Case Value="CP" Datatype="CP"/>
+<Case Value="DT" Datatype="DT"/>
+<Case Value="CX" Datatype="CX"/>
+<Case Value="CK" Datatype="CK"/>
+<Case Value="TS" Datatype="TS"/>
+<Case Value="FT" Datatype="FT"/>
+<Case Value="XON" Datatype="XON"/>
+<Case Value="XPN" Datatype="XPN"/>
+<Case Value="AD" Datatype="AD"/>
+<Case Value="NM" Datatype="NM"/>
+<Case Value="TM" Datatype="TM"/>
+<Case Value="CF" Datatype="CF"/>
+<Case Value="TN" Datatype="TN"/>
+<Case Value="RP" Datatype="RP"/>
+<Case Value="ST" Datatype="ST"/>
+</Mapping>
+</DynamicMapping>
+<Field Name="Set ID - OBX" Usage="O" Datatype="SI" ConfLength="NA" MinLength="1" MaxLength="4" Min="0" Max="1"/>
+<Field Name="Value Type" Usage="C" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="3" Min="0" Max="1"/>
+<Field Name="Observation Identifier" Usage="R" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="1" Max="1"/>
+<Field Name="Observation Sub-ID" Usage="C" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+<Field Name="Observation Value" Usage="C" Datatype="var" ConfLength="NA" MinLength="1" MaxLength="65536" Min="0" Max="*"/>
+<Field Name="Units" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="References Range" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="60" Min="0" Max="1"/>
+<Field Name="Abnormal Flags" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="5" Min="0" Max="5"/>
+<Field Name="Probability" Usage="O" Datatype="NM" ConfLength="NA" MinLength="1" MaxLength="5" Min="0" Max="5"/>
+<Field Name="Nature of Abnormal Test" Usage="O" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="2" Min="0" Max="1"/>
+<Field Name="Observation Result Status" Usage="R" Datatype="ID" ConfLength="NA" MinLength="1" MaxLength="1" Min="1" Max="1"/>
+<Field Name="Date Last Obs Normal Values" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="User Defined Access Checks" Usage="O" Datatype="ST" ConfLength="NA" MinLength="1" MaxLength="20" Min="0" Max="1"/>
+<Field Name="Date/Time of the Observation" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Producer's ID" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="1"/>
+<Field Name="Responsible Observer" Usage="O" Datatype="XCN" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+<Field Name="Observation Method" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA" Min="0" Max="*"/>
+</Segment>
+</Segments>
+<Datatypes>
+<Datatype ID="UVC" Name="UVC" Label="UVC" Version="2.3.1" Description="Value code and amount">
+<Component Name="value code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="value amount" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="XTN" Name="XTN" Label="XTN" Version="2.3.1" Description="Extended telecommunications number">
+<Component Name="[(999)] 999-9999 [X99999][C any text]" Usage="O" Datatype="TN" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="telecommunication use code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="telecommunication equipment type (ID)" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Email address" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Country Code" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Area/city code" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Phone number" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Extension" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="any text" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CP" Name="CP" Label="CP" Version="2.3.1" Description="Composite price">
+<Component Name="price" Usage="O" Datatype="MO" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="price type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="from value" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="to value" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="range units" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="range type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="MO" Name="MO" Label="MO" Version="2.3.1" Description="Money">
+<Component Name="quantity" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="denomination" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="TS" Name="TS" Label="TS" Version="2.3.1" Description="Time stamp">
+<Component Name="time of an event" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="degree of precision" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="RP" Name="RP" Label="RP" Version="2.3.1" Description="Reference pointer">
+<Component Name="pointer" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="application ID" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="type of data" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="subtype" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CK" Name="CK" Label="CK" Version="2.3.1" Description="Composite ID with check digit">
+<Component Name="ID number (NM)" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="check digit" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="code identifying the check digit scheme employed" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning authority" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="SN" Name="SN" Label="SN" Version="2.3.1" Description="Structured numeric">
+<Component Name="comparator" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="num1" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="separator or suffix" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="num2" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="var" Name="var" Label="var" Version="2.3.1" Description="varies"/>
+<Datatype ID="XAD" Name="XAD" Label="XAD" Version="2.3.1" Description="Extended address">
+<Component Name="street address" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="other designation" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="city" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="state or province" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="zip or postal code" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="country" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="address type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="other geographic designation" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="county/parish code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="census tract" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="address representation code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CE" Name="CE" Label="CE" Version="2.3.1" Description="Coded element">
+<Component Name="identifier" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="text" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name of coding system" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="alternate identifier" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="alternate text" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name of alternate coding system" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="FN" Name="FN" Label="FN" Version="2.3.1" Description="Family Name">
+<Component Name="family name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="last name prefix" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CX" Name="CX" Label="CX" Version="2.3.1" Description="Extended composite ID with check digit">
+<Component Name="ID" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="check digit" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="code identifying the check digit scheme employed" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning authority" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="identifier type code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning facility" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="SI" Name="SI" Label="SI" Version="2.3.1" Description="Sequence ID"/>
+<Datatype ID="PTA" Name="PTA" Label="PTA" Version="2.3.1" Description="Policy Type">
+<Component Name="policy type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="amount class" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="amount" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="TM" Name="TM" Label="TM" Version="2.3.1" Description="Time"/>
+<Datatype ID="PL" Name="PL" Label="PL" Version="2.3.1" Description="Person location">
+<Component Name="point of care" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="room" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="bed" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="facility (HD)" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="location status" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="person location type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="building" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="floor" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Location description" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="PCF" Name="PCF" Label="PCF" Version="2.3.1" Description="Pre-certification required">
+<Component Name="pre-certification patient type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="pre-certification required" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="pre-certification window" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="MOP" Name="MOP" Label="MOP" Version="2.3.1" Description="money or percentage">
+<Component Name="money or percentage indicator" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="money or percentage quantity" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="ST" Name="ST" Label="ST" Version="2.3.1" Description="String"/>
+<Datatype ID="ID" Name="ID" Label="ID" Version="2.3.1" Description="Coded values for HL7 tables"/>
+<Datatype ID="RMC" Name="RMC" Label="RMC" Version="2.3.1" Description="Room Coverage">
+<Component Name="room type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="amount type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="coverage amount" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="AD" Name="AD" Label="AD" Version="2.3.1" Description="Address">
+<Component Name="street address" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="other designation" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="city" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="state or province" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="zip or postal code" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="country" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="address type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="other geographic designation" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CF" Name="CF" Label="CF" Version="2.3.1" Description="Coded element with formatted values">
+<Component Name="identifier" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="formatted text" Usage="O" Datatype="FT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name of coding system" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="alternate identifier" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="alternate formatted text" Usage="O" Datatype="FT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name of alternate coding system" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="PN" Name="PN" Label="PN" Version="2.3.1" Description="Person name">
+<Component Name="family+last name" Usage="O" Datatype="FN" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="given name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="middle initial or name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="suffix (e.g., JR or III)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="prefix (e.g., DR)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="degree (e.g., MD)" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="EI" Name="EI" Label="EI" Version="2.3.1" Description="Entity identifier">
+<Component Name="entity identifier" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="namespace ID" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="universal ID" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="universal ID type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="TN" Name="TN" Label="TN" Version="2.3.1" Description="Telephone number"/>
+<Datatype ID="FC" Name="FC" Label="FC" Version="2.3.1" Description="Financial class">
+<Component Name="Financial Class" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Effective Date" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="VID" Name="VID" Label="VID" Version="2.3.1" Description="Version identifier">
+<Component Name="version ID" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="internationalization code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="international version ID" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="XON" Name="XON" Label="XON" Version="2.3.1" Description="Extended composite name and ID number for organizations">
+<Component Name="organization name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="organization name type code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="ID number (NM)" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="check digit" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="code identifying the check digit scheme employed" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning authority" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="identifier type code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning facility ID" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Name Representation code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="NM" Name="NM" Label="NM" Version="2.3.1" Description="Numeric"/>
+<Datatype ID="DT" Name="DT" Label="DT" Version="2.3.1" Description="Date"/>
+<Datatype ID="IS" Name="IS" Label="IS" Version="2.3.1" Description="Coded value for user-defined tables"/>
+<Datatype ID="JCC" Name="JCC" Label="JCC" Version="2.3.1" Description="Job code/class">
+<Component Name="job code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="job class" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="TX" Name="TX" Label="TX" Version="2.3.1" Description="Text data"/>
+<Datatype ID="XCN" Name="XCN" Label="XCN" Version="2.3.1" Description="Extended composite ID number and name">
+<Component Name="ID number (ST)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="family+last name" Usage="O" Datatype="FN" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="given name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="middle initial or name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="suffix (e.g., JR or III)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="prefix (e.g., DR)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="degree (e.g., MD)" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="source table" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning authority" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name type code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="identifier check digit" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="code identifying the check digit scheme employed" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="identifier type code" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning facility" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Name Representation code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="OCD" Name="OCD" Label="OCD" Version="2.3.1" Description="occurence">
+<Component Name="occurrence code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="occurrence date" Usage="O" Datatype="DT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="HD" Name="HD" Label="HD" Version="2.3.1" Description="Hierarchic designator">
+<Component Name="namespace ID" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="universal ID" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="universal ID type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="MSG" Name="MSG" Label="MSG" Version="2.3.1" Description="Message Type">
+<Component Name="message type" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="trigger event" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="message structure" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="XPN" Name="XPN" Label="XPN" Version="2.3.1" Description="Extended person name">
+<Component Name="family+last name" Usage="O" Datatype="FN" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="given name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="middle initial or name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="suffix (e.g., JR or III)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="prefix (e.g., DR)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="degree (e.g., MD)" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="name type code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Name Representation code" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="DLN" Name="DLN" Label="DLN" Version="2.3.1" Description="Driver’s license number">
+<Component Name="Driver's License Number" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="Issuing State, province, country" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="expiration date" Usage="O" Datatype="DT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="DTN" Name="DTN" Label="DTN" Version="2.3.1" Description="Day Type and Number">
+<Component Name="day type" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="number of days" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="DDI" Name="DDI" Label="DDI" Version="2.3.1" Description="daily deductible">
+<Component Name="delay days" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="amount" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="number of days" Usage="O" Datatype="NM" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="FT" Name="FT" Label="FT" Version="2.3.1" Description="Formatted text"/>
+<Datatype ID="DLD" Name="DLD" Label="DLD" Version="2.3.1" Description="discharge location">
+<Component Name="discharge location" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="effective date" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="AUI" Name="AUI" Label="AUI" Version="2.3.1" Description="authorization information">
+<Component Name="authorization number" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="date" Usage="O" Datatype="TS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="source" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="CN" Name="CN" Label="CN" Version="2.3.1" Description="Composite ID number and name">
+<Component Name="ID number (ST)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="family name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="given name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="middle initial or name" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="suffix (e.g., JR or III)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="prefix (e.g., DR)" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="degree (e.g., MD)" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="source table" Usage="O" Datatype="IS" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="assigning authority" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="OSP" Name="OSP" Label="OSP" Version="2.3.1" Description="occurence span">
+<Component Name="occurrence span code" Usage="O" Datatype="CE" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="occurrence span start date" Usage="O" Datatype="DT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="occurrence span stop date" Usage="O" Datatype="DT" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="ED" Name="ED" Label="ED" Version="2.3.1" Description="Encapsulated data">
+<Component Name="source application" Usage="O" Datatype="HD" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="type of data" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="data subtype" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="encoding" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="data" Usage="O" Datatype="ST" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+<Datatype ID="PT" Name="PT" Label="PT" Version="2.3.1" Description="Processing type">
+<Component Name="processing ID" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+<Component Name="processing mode" Usage="O" Datatype="ID" MinLength="NA" MaxLength="NA" ConfLength="NA"/>
+</Datatype>
+</Datatypes>
+</ConformanceProfile>
