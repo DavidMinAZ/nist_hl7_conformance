@@ -1,0 +1,32 @@
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.1/src/main/resources/hl7-v2-schemas/ConformanceContext.xsd" UUID="2036ab99-69b4-4bab-8552-ea6d352a24b4">
+<MetaData Name="ADT" OrgName="No Org Info" Version="2.3.1" Date="No Date Info"/>
+<Predicates>
+<Datatype/>
+<Segment/>
+<Group/>
+<Message/>
+</Predicates>
+<Constraints>
+<Datatype>
+<ByID ID="TM">
+<Constraint ID="TM_DateTimeConstraint">
+<Description>The value SHALL follow the Date/Time pattern 'HH[MM[SS[.S[S[S[S]]]]]][+/-ZZZZ]'.</Description>
+<Assertion>
+<Format Path="." Regex="^(\d{2}|\d{4}|\d{6}|\d{6}\.\d|\d{6}\.\d{2}|\d{6}\.\d{3}|\d{6}\.\d{4})([+-]\d{4})?$"/>
+</Assertion>
+</Constraint>
+</ByID>
+<ByID ID="DT">
+<Constraint ID="DT_DateTimeConstraint">
+<Description>The value SHALL follow the Date/Time pattern 'YYYY[MM[DD]]'.</Description>
+<Assertion>
+<Format Path="." Regex="^(\d{4}|\d{6}|\d{8})$"/>
+</Assertion>
+</Constraint>
+</ByID>
+</Datatype>
+<Segment/>
+<Group/>
+<Message/>
+</Constraints>
+</ConformanceContext>
